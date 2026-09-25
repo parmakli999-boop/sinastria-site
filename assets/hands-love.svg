@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 700">
+<defs><radialGradient id="b"><stop offset="0" stop-color="#17395d"/><stop offset="1" stop-color="#061222"/></radialGradient><radialGradient id="s"><stop offset="0" stop-color="#f0d593" stop-opacity=".8"/><stop offset=".15" stop-color="#d9b66b" stop-opacity=".25"/><stop offset="1" stop-color="#d9b66b" stop-opacity="0"/></radialGradient></defs>
+<rect width="1200" height="700" fill="url(#b)"/><circle cx="600" cy="350" r="280" fill="none" stroke="#d9b66b" stroke-opacity=".25"/><circle cx="600" cy="350" r="190" fill="none" stroke="#d9b66b" stroke-opacity=".2"/><circle cx="600" cy="350" r="130" fill="url(#s)"/>
+<g fill="none" stroke="#f0d593" stroke-linecap="round" stroke-linejoin="round">
+<path stroke-width="6" d="M80 260c110 25 190 70 282 130 55 36 102 72 150 76 36 3 65-20 62-49-3-28-35-42-74-47l-89-10 87-17c45-9 78-34 73-63-5-32-44-44-92-33l-170 40"/>
+<path stroke-width="6" d="M1120 260c-110 25-190 70-282 130-55 36-102 72-150 76-36 3-65-20-62-49 3-28 35-42 74-47l89-10-87-17c-45-9-78-34-73-63 5-32 44-44 92-33l170 40"/>
+</g>
+<path d="M600 326c-42-39-88-6-68 34 15 29 68 62 68 62s53-33 68-62c20-40-26-73-68-34z" fill="#d9b66b" fill-opacity=".15" stroke="#f0d593" stroke-width="3"/>
+<g fill="#f0d593"><circle cx="180" cy="115" r="3"/><circle cx="1010" cy="120" r="2"/><circle cx="970" cy="570" r="3"/><circle cx="220" cy="560" r="2"/></g>
+</svg>
