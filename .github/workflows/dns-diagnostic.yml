@@ -1,0 +1,45 @@
+name: DNS diagnostics
+on:
+  push:
+    paths:
+      - '.github/workflows/dns-diagnostic.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+  pages: read
+jobs:
+  diagnose:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check DNS and Pages
+        shell: bash
+        run: |
+          set -x
+          echo "=== authoritative NS ==="
+          dig +short NS interestingastrology-school.ru
+          echo "=== SOA ==="
+          dig +noall +answer SOA interestingastrology-school.ru
+          echo "=== authoritative CNAME ns1.reg.ru ==="
+          dig +noall +answer @ns1.reg.ru sinastria.interestingastrology-school.ru CNAME
+          echo "=== authoritative CNAME ns2.reg.ru ==="
+          dig +noall +answer @ns2.reg.ru sinastria.interestingastrology-school.ru CNAME
+          echo "=== public CNAME 1.1.1.1 ==="
+          dig +noall +answer @1.1.1.1 sinastria.interestingastrology-school.ru CNAME
+          echo "=== public CNAME 8.8.8.8 ==="
+          dig +noall +answer @8.8.8.8 sinastria.interestingastrology-school.ru CNAME
+          echo "=== resolution chain ==="
+          dig +noall +answer sinastria.interestingastrology-school.ru
+          echo "=== github.io target ==="
+          dig +noall +answer parmakli999-boop.github.io
+          echo "=== HTTP custom ==="
+          curl -I -L --max-time 20 http://sinastria.interestingastrology-school.ru || true
+          echo "=== HTTPS custom ==="
+          curl -I -L --max-time 20 https://sinastria.interestingastrology-school.ru || true
+          echo "=== default pages URL ==="
+          curl -I -L --max-time 20 https://parmakli999-boop.github.io/sinastria-site/ || true
+          echo "=== GitHub Pages health ==="
+          curl -sS -L --max-time 20 \
+            -H "Accept: application/vnd.github+json" \
+            -H "Authorization: Bearer ${{ secrets.GITHUB_TOKEN }}" \
+            -H "X-GitHub-Api-Version: 2026-03-10" \
+            https://api.github.com/repos/parmakli999-boop/sinastria-site/pages/health || true
