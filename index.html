@@ -80,6 +80,61 @@ section{padding:84px 0}.section-title{font-size:clamp(42px,5.5vw,66px);line-heig
 section{padding:68px 0 !important}#format{padding-top:64px !important}.format-copy{position:static !important}
 @media(max-width:980px){.hero{background-position:62% center !important}.format-panel{grid-template-columns:1fr !important}.format-grid{grid-template-columns:repeat(2,minmax(0,1fr)) !important}.metrics{grid-template-columns:repeat(2,minmax(0,1fr)) !important}.cards{grid-template-columns:1fr !important}}
 @media(max-width:620px){section{padding:48px 0 !important}.hero{min-height:auto !important;background-position:64% center !important}.hero-shell{padding:52px 0 36px !important}.hero h1{font-size:54px !important}.hero .subtitle{font-size:26px !important}.hero-copy{font-size:15px !important;line-height:1.62 !important}.hero .chip{font-size:12px;padding:9px 12px}.format-panel,.practice-box,.offer-box{padding:26px 20px !important;border-radius:22px !important}.format-grid,.metrics,.cards{grid-template-columns:1fr !important}.format-card{padding:20px !important}.section-title{font-size:38px !important}.lead{font-size:16px !important}.lecture button{grid-template-columns:40px minmax(0,1fr) 26px !important;padding:16px 14px !important;gap:10px !important}.lecture-title{font-size:20px !important}.lecture-body{padding:0 16px 18px !important}.mid-cta{padding:26px 18px !important}.mid-cta h3{font-size:30px !important}.price{font-size:60px !important}.actions .btn,.cta-row .btn{width:100%}}
+
+/* MOBILE UX FIX: static program, stronger section separation */
+details.lecture{display:block}
+details.lecture summary{list-style:none;cursor:pointer;display:grid;grid-template-columns:54px minmax(0,1fr) 30px;gap:16px;align-items:center;padding:20px 22px}
+details.lecture summary::-webkit-details-marker{display:none}
+details.lecture .lecture-body{display:none}
+details.lecture[open] .lecture-body{display:block}
+details.lecture[open] .plus{transform:rotate(45deg)}
+#program{background:linear-gradient(180deg,rgba(6,18,34,.2),rgba(11,29,51,.72),rgba(6,18,34,.2));border-top:1px solid rgba(217,182,107,.15);border-bottom:1px solid rgba(217,182,107,.15)}
+#program .program-head{padding-bottom:14px;border-bottom:1px solid rgba(217,182,107,.18)}
+#program .lectures{margin-top:24px}
+main>section:nth-of-type(2),main>section:nth-of-type(4){background:rgba(9,27,48,.28);border-top:1px solid rgba(217,182,107,.1);border-bottom:1px solid rgba(217,182,107,.1)}
+@media(max-width:620px){
+  body{padding-bottom:88px}
+  .wrap{width:calc(100vw - 32px) !important}
+  main>section{padding:44px 0 !important;position:relative}
+  main>section+section:before{content:"";position:absolute;left:16px;right:16px;top:0;height:1px;background:linear-gradient(90deg,transparent,rgba(217,182,107,.35),transparent)}
+  .eyebrow{font-size:11px !important;letter-spacing:.16em !important}
+  .section-title{font-size:34px !important;line-height:1.02 !important;margin:8px 0 14px !important}
+  .lead{font-size:15.5px !important;line-height:1.62 !important}
+  .format-panel,.practice-box,.offer-box,.mid-cta{border-radius:20px !important}
+  .format-panel{padding:24px 18px !important}
+  .method-note{font-size:14px !important;line-height:1.55 !important}
+  .format-grid{gap:10px !important}
+  .format-item{padding:16px !important;border-radius:15px !important}
+  .format-item b{font-size:23px !important}
+  .format-item span{font-size:12.5px !important}
+  .metrics{gap:10px !important;margin-top:22px !important}
+  .metric{padding:18px !important;border-radius:16px !important}
+  .metric b{font-size:27px !important}
+  .cards{gap:12px !important;margin-top:22px !important}
+  .card{padding:20px !important;border-radius:17px !important}
+  .card h3{font-size:26px !important}
+  .card p{font-size:14px !important;line-height:1.55 !important}
+  #program .program-head{margin-bottom:0 !important}
+  #program .program-head p{font-size:15px !important;line-height:1.55 !important;margin:10px 0 0 !important}
+  #program .lectures{margin-top:18px !important;gap:10px !important}
+  details.lecture{border-radius:17px !important}
+  details.lecture summary{grid-template-columns:38px minmax(0,1fr) 22px !important;gap:10px !important;padding:15px 14px !important}
+  details.lecture .num{width:36px !important;height:36px !important;font-size:19px !important}
+  details.lecture .lecture-title{font-size:19px !important;line-height:1.13 !important}
+  details.lecture .plus{font-size:22px !important}
+  details.lecture .lecture-body{padding:0 15px 16px 15px !important}
+  details.lecture .lecture-body h4{font-size:14px !important;margin:15px 0 7px !important}
+  details.lecture .lecture-body ul{font-size:14px !important;line-height:1.5 !important;padding-left:19px !important}
+  .outcome{font-size:14px !important;line-height:1.5 !important;padding:11px 13px !important}
+  .mid-cta{margin-top:28px !important;padding:22px 16px !important}
+  .mid-cta h3{font-size:27px !important;line-height:1.05 !important}
+  .mid-cta p{font-size:14px !important;line-height:1.55 !important}
+  .offer-box{padding:26px 18px !important}
+  .offer-box p{font-size:15px !important;line-height:1.6 !important}
+  .price{font-size:54px !important}
+  .deadline{font-size:13px !important}
+  .sticky{left:16px !important;right:16px !important;bottom:max(10px,env(safe-area-inset-bottom)) !important;padding:13px 16px !important;font-size:15px !important}
+}
 </style>
 </head>
 <body>
@@ -148,7 +203,57 @@ section{padding:68px 0 !important}#format{padding-top:64px !important}.format-co
 <div class="card"><h3>Эволюционная задача пары</h3><p>Что люди должны прожить и чему научить друг друга — без фатализма и «приговоров» отношениям.</p></div>
 </div></div></section>
 
-<section id="program"><div class="wrap"><div class="program-head"><div><div class="eyebrow">Программа</div><h2 class="section-title">12 лекций модуля</h2></div><p>Ниже — вся программа. Раскройте любую лекцию, чтобы посмотреть, что будем разбирать и с каким пониманием вы выйдете после урока.</p></div><div class="lectures" id="lectures"></div>
+<section id="program"><div class="wrap"><div class="program-head"><div><div class="eyebrow">Программа</div><h2 class="section-title">12 лекций модуля</h2></div><p>Ниже — вся программа. Раскройте любую лекцию, чтобы посмотреть, что будем разбирать и с каким пониманием вы выйдете после урока.</p></div>
+<div class="lectures" id="lectures">
+  <details class="lecture" open>
+    <summary><span class="num">1</span><span class="lecture-title">Философия синастрии и смысл встречи</span><span class="plus">+</span></summary>
+    <div class="lecture-body"><h4>В программе</h4><ul><li>Что изучает синастрия и почему люди встречаются неслучайно</li><li>Отношения как способ раскрытия натальной карты</li><li>Сходство, противоположность, взаимное дополнение и границы анализа</li></ul><div class="outcome"><strong>Результат:</strong> Поймёте смысл синастрии, эволюционную задачу отношений и научитесь смотреть на пару глубже, без фатальных выводов.</div></div>
+  </details>
+  <details class="lecture">
+    <summary><span class="num">2</span><span class="lecture-title">Натальная карта как основа синастрии</span><span class="plus">+</span></summary>
+    <div class="lecture-body"><h4>В программе</h4><ul><li>Потенциал отношений в индивидуальном гороскопе</li><li>5, 7 и 8 дома, их управители и потребность в партнёрстве</li><li>Стабильность, внутренние противоречия, дефицит стихий и принцип подтверждения</li></ul><div class="outcome"><strong>Результат:</strong> Сможете видеть, что человек несёт в отношения, где его сильные стороны, дефициты и внутренние противоречия.</div></div>
+  </details>
+  <details class="lecture">
+    <summary><span class="num">3</span><span class="lecture-title">Наложение планет партнёров на дома</span><span class="plus">+</span></summary>
+    <div class="lecture-body"><h4>В программе</h4><ul><li>Планета как сила, дом как обстоятельства</li><li>Как планеты партнёра активизируют дома и куспиды</li><li>Почему карты необходимо накладывать в обоих направлениях</li></ul><div class="outcome"><strong>Результат:</strong> Научитесь видеть, какие сферы жизни партнёры включают друг в друге и почему отношения воспринимаются несимметрично.</div></div>
+  </details>
+  <details class="lecture">
+    <summary><span class="num">4</span><span class="lecture-title">Сравнение одноимённых планет</span><span class="plus">+</span></summary>
+    <div class="lecture-body"><h4>В программе</h4><ul><li>Солнце, Луна, Меркурий, Венера, Марс, Юпитер и Сатурн</li><li>Связи через знаки, стихии, управителей и диспозиторов</li><li>Почему отсутствие аспекта не означает отсутствие взаимодействия</li></ul><div class="outcome"><strong>Результат:</strong> Сможете сравнивать личность, эмоции, общение, ценности, действия, убеждения и границы партнёров.</div></div>
+  </details>
+  <details class="lecture">
+    <summary><span class="num">5</span><span class="lecture-title">Светила и гендерные планеты</span><span class="plus">+</span></summary>
+    <div class="lecture-body"><h4>В программе</h4><ul><li>Солнце, Луна, Венера и Марс в отношениях</li><li>Любовный, семейный и родительский образ мужчины и женщины</li><li>Связи Солнца и Луны, Венеры и Марса</li></ul><div class="outcome"><strong>Результат:</strong> Поймёте природу романтического и сексуального притяжения и противоречия между любовью, браком и семейной ролью.</div></div>
+  </details>
+  <details class="lecture">
+    <summary><span class="num">6</span><span class="lecture-title">Эмоциональная и бытовая совместимость</span><span class="plus">+</span></summary>
+    <div class="lecture-body"><h4>В программе</h4><ul><li>Луна как основа совместной жизни</li><li>Эмоциональные потребности, забота, привычки, ритм жизни и быт</li><li>Различия, которые можно согласовать, и те, что тяжело выдерживать годами</li></ul><div class="outcome"><strong>Результат:</strong> Научитесь отличать романтическую совместимость от бытовой и видеть, насколько людям реально комфортно жить рядом.</div></div>
+  </details>
+  <details class="lecture">
+    <summary><span class="num">7</span><span class="lecture-title">Аспекты в синастрии</span><span class="plus">+</span></summary>
+    <div class="lecture-body"><h4>В программе</h4><ul><li>Соединение, оппозиция, квадратура, тригон, секстиль</li><li>Роль орбиса, творческие и кармические аспекты</li><li>Почему гармоничные аспекты не всегда благо, а напряжённые — не всегда проблема</li></ul><div class="outcome"><strong>Результат:</strong> Сможете глубоко читать аспекты и понимать, какое новое качество рождается из взаимодействия двух планет.</div></div>
+  </details>
+  <details class="lecture">
+    <summary><span class="num">8</span><span class="lecture-title">Кармические узлы и эволюционная задача пары</span><span class="plus">+</span></summary>
+    <div class="lecture-body"><h4>В программе</h4><ul><li>Резонанс узлов партнёров</li><li>Планеты партнёра на узлах и в квадрате к ним</li><li>Повторяющиеся сценарии, предопределённость и свобода воли</li></ul><div class="outcome"><strong>Результат:</strong> Поймёте, чему партнёры учат друг друга, какие задачи проживают вместе и почему некоторые отношения завершаются после выполнения своей роли.</div></div>
+  </details>
+  <details class="lecture">
+    <summary><span class="num">9</span><span class="lecture-title">Чёрная Луна и включённые знаки</span><span class="plus">+</span></summary>
+    <div class="lecture-body"><h4>В программе</h4><ul><li>Чёрная Луна как кривое зеркало и зона сильной вовлечённости</li><li>Зависимость, искажение, зацикленность и постфактум-осознание</li><li>Включённые знаки и неосознанные качества, которые вскрывает партнёр</li></ul><div class="outcome"><strong>Результат:</strong> Научитесь видеть болезненные, притягательные и неосознанные сценарии, через которые отношения меняют человека.</div></div>
+  </details>
+  <details class="lecture">
+    <summary><span class="num">10</span><span class="lecture-title">Высшие планеты и трансформация</span><span class="plus">+</span></summary>
+    <div class="lecture-body"><h4>В программе</h4><ul><li>Уран, Нептун и Плутон в синастрии</li><li>Их связи с личными планетами, Узлами и Чёрной Луной</li><li>Повторение родительских и семейных моделей</li></ul><div class="outcome"><strong>Результат:</strong> Сможете распознавать отношения, которые приносят кризис, освобождение, идеализацию или глубокую трансформацию.</div></div>
+  </details>
+  <details class="lecture">
+    <summary><span class="num">11</span><span class="lecture-title">Разные виды синастрических отношений</span><span class="plus">+</span></summary>
+    <div class="lecture-body"><h4>В программе</h4><ul><li>Любовные, супружеские и неофициальные отношения</li><li>Родители и дети, родственники, друзья, деловые связи</li><li>Учитель, руководитель и другие значимые люди</li></ul><div class="outcome"><strong>Результат:</strong> Научитесь анализировать синастрию не только для пары, но и для семьи, дружбы, работы и других важных связей.</div></div>
+  </details>
+  <details class="lecture">
+    <summary><span class="num">12</span><span class="lecture-title">Развитие отношений и итоговый алгоритм</span><span class="plus">+</span></summary>
+    <div class="lecture-body"><h4>В программе</h4><ul><li>Потенциал продолжительности отношений</li><li>Карта первой встречи, знакомства, брака и рождения ребёнка</li><li>Прогрессии, транзиты, дирекции и пошаговый алгоритм полного анализа</li></ul><div class="outcome"><strong>Результат:</strong> Соберёте целостный алгоритм анализа и сможете делать взвешенные выводы: зачем этот человек появился в жизни.</div></div>
+  </details>
+</div>
 <div class="mid-cta"><h3>Можно сначала спокойно посмотреть программу целиком</h3><p>Если останутся вопросы по формату, участию или уровню подготовки — напишите в Отдел заботы в ТГ @astrozabota. Поможем спокойно сориентироваться.</p><a class="btn secondary tg-link" href="#">Отдел заботы в ТГ @astrozabota</a></div></div></section>
 
 <section id="offer"><div class="wrap"><div class="offer-box"><div class="eyebrow">Условия участия</div><h2 class="section-title">Если хотите учиться вместе с текущей группой</h2><p>Чтобы присутствовать на <strong>живых онлайн-уроках</strong>, задавать вопросы Татьяне во время занятий и проходить модуль вместе с группой, важно войти в текущий поток <strong>до 10 октября 2026 года</strong>.</p><p>Так у вас останется время спокойно посмотреть первые 2 лекции в записи, изучить методички и дальше продолжить обучение уже вместе со всеми в живом формате.</p><div class="price">44 000 ₽</div><div class="deadline">Войти в текущий поток можно до 10 октября 2026 года</div><p>Если до оплаты остались вопросы, можно сначала написать в Отдел заботы в ТГ @astrozabota — подскажем по формату, доступу и участию.</p><div class="cta-row"><a class="btn primary payment-action" href="#">Присоединиться к модулю</a><a class="btn secondary tg-link" href="#">Отдел заботы в ТГ @astrozabota</a></div><div class="telegram">@astrozabota · Нажмите — откроется чат отдела заботы</div></div></div></section>
@@ -163,22 +268,6 @@ const TELEGRAM_URL='https://t.me/astrozabota?text='+encodeURIComponent(TELEGRAM_
 const PAYMENT_URL='';
 document.querySelectorAll('.tg-link').forEach(a=>{a.href=TELEGRAM_URL;a.target='_blank';a.rel='noopener'});
 document.querySelectorAll('.payment-action').forEach(a=>{a.href=PAYMENT_URL||TELEGRAM_URL;a.target='_blank';a.rel='noopener'});
-const lectures=[
-{n:1,t:'Философия синастрии и смысл встречи',p:['Что изучает синастрия и почему люди встречаются неслучайно','Отношения как способ раскрытия натальной карты','Сходство, противоположность, взаимное дополнение и границы анализа'],r:'Поймёте смысл синастрии, эволюционную задачу отношений и научитесь смотреть на пару глубже, без фатальных выводов.'},
-{n:2,t:'Натальная карта как основа синастрии',p:['Потенциал отношений в индивидуальном гороскопе','5, 7 и 8 дома, их управители и потребность в партнёрстве','Стабильность, внутренние противоречия, дефицит стихий и принцип подтверждения'],r:'Сможете видеть, что человек несёт в отношения, где его сильные стороны, дефициты и внутренние противоречия.'},
-{n:3,t:'Наложение планет партнёров на дома',p:['Планета как сила, дом как обстоятельства','Как планеты партнёра активизируют дома и куспиды','Почему карты необходимо накладывать в обоих направлениях'],r:'Научитесь видеть, какие сферы жизни партнёры включают друг в друге и почему отношения воспринимаются несимметрично.'},
-{n:4,t:'Сравнение одноимённых планет',p:['Солнце, Луна, Меркурий, Венера, Марс, Юпитер и Сатурн','Связи через знаки, стихии, управителей и диспозиторов','Почему отсутствие аспекта не означает отсутствие взаимодействия'],r:'Сможете сравнивать личность, эмоции, общение, ценности, действия, убеждения и границы партнёров.'},
-{n:5,t:'Светила и гендерные планеты',p:['Солнце, Луна, Венера и Марс в отношениях','Любовный, семейный и родительский образ мужчины и женщины','Связи Солнца и Луны, Венеры и Марса'],r:'Поймёте природу романтического и сексуального притяжения и противоречия между любовью, браком и семейной ролью.'},
-{n:6,t:'Эмоциональная и бытовая совместимость',p:['Луна как основа совместной жизни','Эмоциональные потребности, забота, привычки, ритм жизни и быт','Различия, которые можно согласовать, и те, что тяжело выдерживать годами'],r:'Научитесь отличать романтическую совместимость от бытовой и видеть, насколько людям реально комфортно жить рядом.'},
-{n:7,t:'Аспекты в синастрии',p:['Соединение, оппозиция, квадратура, тригон, секстиль','Роль орбиса, творческие и кармические аспекты','Почему гармоничные аспекты не всегда благо, а напряжённые — не всегда проблема'],r:'Сможете глубоко читать аспекты и понимать, какое новое качество рождается из взаимодействия двух планет.'},
-{n:8,t:'Кармические узлы и эволюционная задача пары',p:['Резонанс узлов партнёров','Планеты партнёра на узлах и в квадрате к ним','Повторяющиеся сценарии, предопределённость и свобода воли'],r:'Поймёте, чему партнёры учат друг друга, какие задачи проживают вместе и почему некоторые отношения завершаются после выполнения своей роли.'},
-{n:9,t:'Чёрная Луна и включённые знаки',p:['Чёрная Луна как кривое зеркало и зона сильной вовлечённости','Зависимость, искажение, зацикленность и постфактум-осознание','Включённые знаки и неосознанные качества, которые вскрывает партнёр'],r:'Научитесь видеть болезненные, притягательные и неосознанные сценарии, через которые отношения меняют человека.'},
-{n:10,t:'Высшие планеты и трансформация',p:['Уран, Нептун и Плутон в синастрии','Их связи с личными планетами, Узлами и Чёрной Луной','Повторение родительских и семейных моделей'],r:'Сможете распознавать отношения, которые приносят кризис, освобождение, идеализацию или глубокую трансформацию.'},
-{n:11,t:'Разные виды синастрических отношений',p:['Любовные, супружеские и неофициальные отношения','Родители и дети, родственники, друзья, деловые связи','Учитель, руководитель и другие значимые люди'],r:'Научитесь анализировать синастрию не только для пары, но и для семьи, дружбы, работы и других важных связей.'},
-{n:12,t:'Развитие отношений и итоговый алгоритм',p:['Потенциал продолжительности отношений','Карта первой встречи, знакомства, брака и рождения ребёнка','Прогрессии, транзиты, дирекции и пошаговый алгоритм полного анализа'],r:'Соберёте целостный алгоритм анализа и сможете делать взвешенные выводы: зачем этот человек появился в жизни.'}
-];
-const host=document.getElementById('lectures');
-lectures.forEach((l,i)=>{const el=document.createElement('article');el.className='lecture'+(i===0?' open':'');el.innerHTML=\`<button type="button" aria-expanded="\${i===0?'true':'false'}"><span class="num">\${l.n}</span><span class="lecture-title">\${l.t}</span><span class="plus">+</span></button><div class="lecture-body"><h4>В программе</h4><ul>\${l.p.map(x=>\`<li>\${x}</li>\`).join('')}</ul><div class="outcome"><strong>Результат:</strong> \${l.r}</div></div>\`;const b=el.querySelector('button');b.addEventListener('click',()=>{el.classList.toggle('open');b.setAttribute('aria-expanded',el.classList.contains('open'))});host.appendChild(el)});
 </script>
 </body>
 </html>
