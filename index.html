@@ -135,6 +135,76 @@ main>section:nth-of-type(2),main>section:nth-of-type(4){background:rgba(9,27,48,
   .deadline{font-size:13px !important}
   .sticky{left:16px !important;right:16px !important;bottom:max(10px,env(safe-area-inset-bottom)) !important;padding:13px 16px !important;font-size:15px !important}
 }
+
+/* FESTIVE ASTROLOGY VISUAL UPGRADE */
+main{position:relative}
+main:before{content:"";position:fixed;inset:0;pointer-events:none;z-index:-1;background:
+radial-gradient(circle at 12% 18%,rgba(240,213,147,.08),transparent 18%),
+radial-gradient(circle at 88% 34%,rgba(92,130,179,.10),transparent 22%),
+radial-gradient(circle at 52% 72%,rgba(217,182,107,.06),transparent 20%)}
+.section-divider{width:min(1120px,90vw);height:56px;margin:0 auto;display:flex;align-items:center;justify-content:center;gap:14px;color:var(--gold2);opacity:.9}
+.section-divider:before,.section-divider:after{content:"";height:1px;flex:1;background:linear-gradient(90deg,transparent,rgba(217,182,107,.55))}
+.section-divider:after{background:linear-gradient(90deg,rgba(217,182,107,.55),transparent)}
+.section-divider span{font-family:"Cormorant Garamond",serif;font-size:25px;letter-spacing:.18em;text-shadow:0 0 18px rgba(240,213,147,.35)}
+#format .format-panel{background:
+linear-gradient(145deg,rgba(5,18,34,.86),rgba(8,28,49,.93)),
+radial-gradient(circle at 82% 8%,rgba(240,213,147,.14),transparent 26%) !important}
+.format-panel:after{opacity:.9}
+.format-item{position:relative;overflow:hidden;background:linear-gradient(160deg,rgba(16,39,65,.96),rgba(7,21,39,.93)) !important}
+.format-item:before{content:"✦";position:absolute;right:14px;top:8px;color:rgba(240,213,147,.18);font-size:24px}
+.format-item:nth-child(2n):before{content:"☾"}
+.format-item b{padding-right:24px}
+.astro-ornament{position:absolute;inset:auto -80px -90px auto;width:250px;height:250px;border:1px solid rgba(217,182,107,.16);border-radius:50%;box-shadow:0 0 0 28px rgba(217,182,107,.025),0 0 0 56px rgba(217,182,107,.016);pointer-events:none}
+.astro-ornament:before,.astro-ornament:after{content:"";position:absolute;left:50%;top:50%;background:rgba(217,182,107,.16);transform:translate(-50%,-50%)}
+.astro-ornament:before{width:1px;height:100%}.astro-ornament:after{width:100%;height:1px}
+.practice-box{display:grid;grid-template-columns:1.02fr .98fr;gap:30px;align-items:stretch}
+.practice-copy{align-self:center}
+.practice-art{min-height:330px;border-radius:24px;border:1px solid rgba(217,182,107,.42);background:
+linear-gradient(180deg,rgba(4,14,27,.06),rgba(4,14,27,.52)),
+url('assets/hero-cover.webp?v=love2') 31% center/cover no-repeat;box-shadow:inset 0 0 45px rgba(0,0,0,.24);position:relative;overflow:hidden}
+.practice-art:after{content:"♡";position:absolute;right:18px;bottom:6px;font-family:"Cormorant Garamond",serif;font-size:92px;color:rgba(240,213,147,.26);text-shadow:0 0 22px rgba(240,213,147,.2)}
+.romance-section{padding:54px 0 !important}
+.romance-head{text-align:center;max-width:800px;margin:0 auto 28px}
+.romance-head .section-title{margin-left:auto;margin-right:auto}
+.romance-gallery{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.romance-card{min-height:330px;border:1px solid rgba(217,182,107,.42);border-radius:26px;overflow:hidden;position:relative;background-image:linear-gradient(180deg,rgba(4,13,25,.08) 32%,rgba(4,13,25,.92) 100%),url('assets/hero-cover.webp?v=love2');background-size:cover;box-shadow:0 24px 65px rgba(0,0,0,.34)}
+.romance-card:nth-child(1){background-position:26% center}.romance-card:nth-child(2){background-position:50% center}.romance-card:nth-child(3){background-position:75% center}
+.romance-card:before{content:"";position:absolute;inset:14px;border:1px solid rgba(240,213,147,.25);border-radius:18px;pointer-events:none}
+.romance-caption{position:absolute;left:26px;right:26px;bottom:26px;z-index:1}
+.romance-caption b{display:block;font-family:"Cormorant Garamond",serif;font-size:31px;color:var(--gold2);margin-bottom:5px}
+.romance-caption span{font-size:13px;line-height:1.5;color:#eee5d7}
+.cards .card{position:relative;overflow:hidden;padding-top:64px !important}
+.cards .card:before{position:absolute;left:26px;top:18px;font-family:"Cormorant Garamond",serif;font-size:34px;color:var(--gold2);text-shadow:0 0 18px rgba(240,213,147,.18)}
+.cards .card:nth-child(1):before{content:"♡"}.cards .card:nth-child(2):before{content:"☾"}.cards .card:nth-child(3):before{content:"✦"}.cards .card:nth-child(4):before{content:"☉"}
+#program{position:relative;overflow:hidden}
+#program:after{content:"";position:absolute;width:430px;height:430px;border:1px solid rgba(217,182,107,.08);border-radius:50%;right:-160px;top:80px;box-shadow:0 0 0 48px rgba(217,182,107,.012),0 0 0 96px rgba(217,182,107,.008);pointer-events:none}
+#program .wrap{position:relative;z-index:1}
+.program-head{position:relative;padding:25px 28px !important;border:1px solid rgba(217,182,107,.24) !important;border-radius:24px;background:linear-gradient(145deg,rgba(13,36,60,.72),rgba(6,20,37,.66))}
+.program-head:after{content:"☾ ✦ ☉ ✦ ☾";position:absolute;right:28px;bottom:17px;color:rgba(240,213,147,.25);letter-spacing:.22em;font-size:19px}
+details.lecture{transition:transform .2s,border-color .2s}
+details.lecture:hover{transform:translateY(-1px);border-color:rgba(240,213,147,.58) !important}
+.offer-box{background:
+linear-gradient(90deg,rgba(4,14,27,.92),rgba(4,14,27,.82)),
+url('assets/hero-cover.webp?v=love2') 15% center/cover no-repeat !important;text-shadow:0 1px 8px rgba(0,0,0,.28)}
+.offer-box:after{content:"♡";position:absolute;left:28px;bottom:8px;font-family:"Cormorant Garamond",serif;font-size:120px;color:rgba(240,213,147,.12);pointer-events:none}
+@media(max-width:900px){
+ .practice-box{grid-template-columns:1fr}.practice-art{min-height:280px}
+ .romance-gallery{grid-template-columns:1fr 1fr}.romance-card:nth-child(3){grid-column:1/-1}
+}
+@media(max-width:620px){
+ .section-divider{height:38px}.section-divider span{font-size:18px}
+ .practice-box{gap:18px !important}.practice-art{min-height:250px;border-radius:18px}
+ .romance-section{padding:38px 0 !important}.romance-head{margin-bottom:18px}
+ .romance-gallery{grid-template-columns:1fr;gap:12px}
+ .romance-card,.romance-card:nth-child(3){grid-column:auto;min-height:250px;border-radius:20px}
+ .romance-card:before{inset:10px;border-radius:14px}
+ .romance-caption{left:22px;right:22px;bottom:20px}
+ .romance-caption b{font-size:28px}.romance-caption span{font-size:13px}
+ .cards .card{padding-top:58px !important}
+ .program-head{padding:20px 18px !important;border-radius:18px}
+ .program-head:after{display:none}
+ .offer-box{background:linear-gradient(180deg,rgba(4,14,27,.83),rgba(4,14,27,.94)),url('assets/hero-cover.webp?v=love2') 28% center/cover no-repeat !important}
+}
 </style>
 </head>
 <body>
@@ -173,7 +243,7 @@ main>section:nth-of-type(2),main>section:nth-of-type(4){background:rgba(9,27,48,
 </header>
 
 <main>
-<section id="format"><div class="wrap"><div class="format-panel">
+<section id="format"><div class="wrap"><div class="format-panel"><div class="astro-ornament" aria-hidden="true"></div>
   <div>
     <div class="eyebrow">Как проходит обучение</div>
     <h2 class="section-title">Живые занятия, а не просто набор записей</h2>
@@ -194,8 +264,18 @@ main>section:nth-of-type(2),main>section:nth-of-type(4){background:rgba(9,27,48,
 <section><div class="wrap"><div class="eyebrow">Что изменится после обучения</div><h2 class="section-title">Вы научитесь видеть отношения глубже</h2><p class="lead">После модуля синастрия перестаёт быть набором разрозненных аспектов. Вы начнёте видеть, что именно связывает людей, где им легко, где возникают сложности и какую роль эти отношения играют в жизни каждого.</p>
 <div class="metrics"><div class="metric"><b>12</b><span>структурных лекций по синастрии</span></div><div class="metric"><b>Практика</b><span>на натальных картах учеников</span></div><div class="metric"><b>Алгоритм</b><span>полного синастрического анализа</span></div><div class="metric"><b>≈ 2 мес.</b><span>последовательного обучения</span></div></div></div></section>
 
-<section><div class="wrap"><div class="practice-box"><div class="eyebrow">Не только теория</div><h2 class="section-title">Практика на реальных натальных картах учеников</h2><p class="lead">Во время модуля Татьяна будет разбирать синастрию на <strong>натальных картах участников обучения</strong>. На таких примерах особенно хорошо видно, как отдельные показатели соединяются в общую картину и как они проявляются в реальных отношениях.</p></div></div></section>
+<section><div class="wrap"><div class="practice-box"><div class="practice-art" aria-hidden="true"></div><div class="practice-copy"><div class="eyebrow">Не только теория</div><h2 class="section-title">Практика на реальных натальных картах учеников</h2><p class="lead">Во время модуля Татьяна будет разбирать синастрию на <strong>натальных картах участников обучения</strong>. На таких примерах особенно хорошо видно, как отдельные показатели соединяются в общую картину и как они проявляются в реальных отношениях.</p></div></div></div></section>
 
+<div class="section-divider" aria-hidden="true"><span>✦ ☾ ✦</span></div>
+<section class="romance-section"><div class="wrap">
+  <div class="romance-head"><div class="eyebrow">Синастрия — про живые отношения</div><h2 class="section-title">Увидеть, что происходит между двумя людьми</h2><p class="lead">Не только «совместимы или нет», а откуда берётся притяжение, близость, напряжение и почему некоторые встречи меняют нас сильнее других.</p></div>
+  <div class="romance-gallery">
+    <div class="romance-card"><div class="romance-caption"><b>Притяжение</b><span>Почему именно этот человек цепляет и какие качества партнёры пробуждают друг в друге.</span></div></div>
+    <div class="romance-card"><div class="romance-caption"><b>Близость</b><span>Как устроены эмоциональная, любовная, сексуальная и бытовая совместимость.</span></div></div>
+    <div class="romance-card"><div class="romance-caption"><b>Смысл встречи</b><span>Какая задача стоит за отношениями и чему эта связь может научить обоих.</span></div></div>
+  </div>
+</div></section>
+<div class="section-divider" aria-hidden="true"><span>♡ ✦ ♡</span></div>
 <section><div class="wrap"><div class="eyebrow">Итоговый навык</div><h2 class="section-title">Сможете анализировать разные типы отношений</h2><div class="cards">
 <div class="card"><h3>Любовь и брак</h3><p>Романтическое и сексуальное притяжение, эмоциональная и бытовая совместимость, устойчивость и точки напряжения.</p></div>
 <div class="card"><h3>Родители и дети</h3><p>Как ребёнок активизирует карту родителей, как проявляются семейные сценарии и значимые связи.</p></div>
