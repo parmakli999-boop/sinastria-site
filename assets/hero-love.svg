@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900">
+<defs>
+ <radialGradient id="bg" cx="50%" cy="42%"><stop offset="0" stop-color="#173658"/><stop offset=".55" stop-color="#0a2038"/><stop offset="1" stop-color="#061222"/></radialGradient>
+ <radialGradient id="glow"><stop offset="0" stop-color="#f4d995" stop-opacity=".72"/><stop offset=".22" stop-color="#d9b66b" stop-opacity=".22"/><stop offset="1" stop-color="#d9b66b" stop-opacity="0"/></radialGradient>
+ <filter id="g"><feGaussianBlur stdDeviation="9"/></filter>
+</defs>
+<rect width="1200" height="900" fill="url(#bg)"/>
+<circle cx="600" cy="430" r="300" fill="none" stroke="#d9b66b" stroke-opacity=".34" stroke-width="2"/>
+<circle cx="600" cy="430" r="235" fill="none" stroke="#f0d593" stroke-opacity=".28"/>
+<circle cx="600" cy="430" r="168" fill="url(#glow)" filter="url(#g)"/>
+<g stroke="#d9b66b" stroke-opacity=".17"><path d="M600 86V774M255 430H945M356 186L844 674M844 186L356 674"/></g>
+<g fill="#f0d593">
+ <circle cx="180" cy="170" r="3"/><circle cx="1010" cy="150" r="2.5"/><circle cx="1050" cy="610" r="3"/><circle cx="190" cy="670" r="2"/>
+ <circle cx="320" cy="100" r="2"/><circle cx="900" cy="250" r="2"/><circle cx="290" cy="420" r="2.5"/><circle cx="860" cy="750" r="2"/>
+</g>
+<g fill="none" stroke="#f0d593" stroke-linecap="round" stroke-linejoin="round">
+ <!-- left profile -->
+ <path stroke-width="5" d="M485 600c-62-24-108-79-117-145-10-72 20-146 80-188 44-31 94-43 145-32-28 18-48 45-58 78-8 28-7 60 3 88-31 10-58 31-78 60-25 36-30 82-15 122 10 26 24 45 40 57"/>
+ <path stroke-width="3" d="M528 363c19-9 38-12 57-8M533 399c20 7 39 8 57 1M548 438c22 13 42 13 61 1"/>
+ <!-- right profile -->
+ <path stroke-width="5" d="M715 600c62-24 108-79 117-145 10-72-20-146-80-188-44-31-94-43-145-32 28 18 48 45 58 78 8 28 7 60-3 88 31 10 58 31 78 60 25 36 30 82 15 122-10 26-24 45-40 57"/>
+ <path stroke-width="3" d="M672 363c-19-9-38-12-57-8M667 399c-20 7-39 8-57 1M652 438c-22 13-42 13-61 1"/>
+</g>
+<path d="M600 555c-58-54-122-9-95 46 20 40 95 87 95 87s75-47 95-87c27-55-37-100-95-46z" fill="none" stroke="#f0d593" stroke-width="3" stroke-opacity=".85"/>
+<g fill="#f0d593" font-family="Georgia,serif" text-anchor="middle"><text x="600" y="790" font-size="36" letter-spacing="4">ДВЕ КАРТЫ · ОДНА ИСТОРИЯ</text></g>
+</svg>
