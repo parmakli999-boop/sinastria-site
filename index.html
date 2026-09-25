@@ -1,430 +1,106 @@
 <!doctype html>
 <html lang="ru">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>Модуль 4 «Синастрия» — Школа Татьяны Лукашевич</title>
-<meta name="description" content="12 лекций по синастрии, практика на натальных картах учеников. Стоимость 44 000 ₽. Войти в поток можно до 10 октября 2026.">
-<meta name="theme-color" content="#061222">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<meta name="description" content="12 живых онлайн-лекций по синастрии. Практика на натальных картах учеников.">
+<meta name="theme-color" content="#050f1d">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
-:root{--bg:#061222;--bg2:#0b1c32;--gold:#d9b66b;--gold2:#f0d593;--text:#f6f1e5;--muted:#bbb5a7;--line:rgba(217,182,107,.34)}
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(circle at 15% 10%,rgba(34,78,123,.22),transparent 30%),radial-gradient(circle at 84% 24%,rgba(140,97,36,.15),transparent 26%),linear-gradient(180deg,#061120,#08182a 45%,#061120);color:var(--text);font-family:Manrope,system-ui,sans-serif;overflow-x:hidden}
-body:before{content:"";position:fixed;inset:0;pointer-events:none;opacity:.25;background-image:radial-gradient(circle at 20% 30%,#fff 0 1px,transparent 1.5px),radial-gradient(circle at 70% 20%,#e8d39c 0 1px,transparent 1.5px),radial-gradient(circle at 40% 80%,#fff 0 1px,transparent 1.5px);background-size:120px 120px,180px 180px,160px 160px}
-.wrap{width:min(1160px,92vw);margin:auto}.eyebrow{font-size:13px;letter-spacing:.18em;text-transform:uppercase;color:var(--gold2);font-weight:700}.serif,.title,h1,h2,h3{font-family:"Cormorant Garamond",Georgia,serif}
-.hero{min-height:92vh;position:relative;display:flex;align-items:flex-end;overflow:hidden;background:radial-gradient(circle at 50% 15%,rgba(70,107,148,.28),transparent 29%),radial-gradient(circle at 50% 42%,rgba(214,171,88,.11),transparent 25%),linear-gradient(180deg,#071426 0%,#0a1930 48%,#061222 100%)}
-.hero:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(2,8,18,.01) 28%,rgba(2,8,18,.2) 56%,#061222 96%);z-index:1}.celestial{position:absolute;inset:0;z-index:0;opacity:.78}.celestial svg{width:100%;height:100%}.orbit{fill:none;stroke:rgba(240,213,147,.42);stroke-width:1}.fine{fill:none;stroke:rgba(240,213,147,.22);stroke-width:.7}.star{fill:#f0d593}.profile{fill:none;stroke:rgba(240,213,147,.62);stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round}
-.hero-content{position:relative;z-index:2;padding:0 0 58px;max-width:830px}.hero h1{font-size:clamp(52px,8vw,94px);line-height:.88;margin:10px 0 16px;color:var(--gold2);text-shadow:0 2px 24px rgba(0,0,0,.35)}.subtitle{font-family:"Cormorant Garamond",serif;font-size:clamp(25px,3.4vw,39px);color:#fff6df;margin:0 0 22px}
-.chips,.actions,.cta-row{display:flex;flex-wrap:wrap;gap:10px}.chip{border:1px solid var(--line);background:rgba(4,17,32,.64);padding:10px 14px;border-radius:999px;font-size:14px}.btn{display:inline-flex;align-items:center;justify-content:center;text-decoration:none;border-radius:999px;padding:15px 22px;font-weight:700;border:1px solid var(--gold);transition:.2s}.primary{background:linear-gradient(135deg,#c89e4f,#f0d593);color:#1a1408;box-shadow:0 12px 34px rgba(213,174,95,.22)}.secondary{background:rgba(5,19,35,.62);color:var(--gold2)}.btn:hover{transform:translateY(-2px)}.micro{font-size:12px;color:var(--muted);margin-top:10px}
-section{padding:84px 0}.section-title{font-size:clamp(42px,5.5vw,66px);line-height:1;margin:8px 0 16px;color:var(--gold2)}.lead{font-size:19px;line-height:1.75;color:#e9e3d8;max-width:850px}
-.metrics{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:34px}.metric,.card,.lecture{background:linear-gradient(180deg,rgba(16,35,57,.82),rgba(6,20,37,.82));border:1px solid var(--line);border-radius:22px;box-shadow:0 24px 70px rgba(0,0,0,.32)}.metric{padding:24px}.metric b{display:block;font-family:"Cormorant Garamond",serif;color:var(--gold2);font-size:32px;margin-bottom:6px}.metric span{color:#ddd6ca;font-size:14px;line-height:1.5}
-.practice-box{padding:42px;border:1px solid var(--line);border-radius:28px;background:linear-gradient(145deg,rgba(18,41,66,.75),rgba(8,21,38,.85));position:relative;overflow:hidden}.practice-box:after{content:"";position:absolute;width:420px;height:420px;border:1px solid rgba(217,182,107,.17);border-radius:50%;right:-150px;top:-140px;box-shadow:0 0 0 36px rgba(217,182,107,.03),0 0 0 74px rgba(217,182,107,.02)}
-.cards{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:32px}.card{padding:28px}.card h3{font-size:30px;margin:0 0 12px;color:var(--gold2)}.card p{color:#dcd4c7;line-height:1.65;margin:0}
-.program-head{display:flex;justify-content:space-between;gap:20px;align-items:end;margin-bottom:26px}.program-head p{max-width:520px;color:var(--muted)}.lectures{display:grid;gap:14px}.lecture{overflow:hidden}.lecture button{all:unset;box-sizing:border-box;width:100%;cursor:pointer;display:grid;grid-template-columns:54px 1fr auto;gap:16px;align-items:center;padding:20px 22px}.num{width:44px;height:44px;border:1px solid var(--line);border-radius:50%;display:grid;place-items:center;color:var(--gold2);font-family:"Cormorant Garamond",serif;font-size:24px}.lecture-title{font-family:"Cormorant Garamond",serif;font-size:26px;color:#fff4da}.plus{color:var(--gold2);font-size:26px;transition:.2s}.lecture.open .plus{transform:rotate(45deg)}.lecture-body{display:none;padding:0 24px 24px 92px;border-top:1px solid rgba(217,182,107,.15)}.lecture.open .lecture-body{display:block}.lecture-body h4{color:var(--gold2);margin:20px 0 8px}.lecture-body ul{margin:0 0 18px;padding-left:18px;color:#d8d0c3;line-height:1.65}.outcome{border-left:2px solid var(--gold);padding:12px 16px;background:rgba(217,182,107,.06);color:#f5ead6;line-height:1.65}
-.mid-cta{margin-top:42px;padding:32px;border:1px solid var(--line);border-radius:26px;text-align:center;background:radial-gradient(circle at 50% 0%,rgba(217,182,107,.13),transparent 54%),rgba(8,22,40,.78)}.mid-cta h3{font-size:36px;color:var(--gold2);margin:0 0 12px}
-.offer-box{border:1px solid rgba(217,182,107,.48);border-radius:32px;padding:46px;background:linear-gradient(145deg,rgba(15,34,57,.94),rgba(5,17,32,.94));box-shadow:0 30px 90px rgba(0,0,0,.42);text-align:center}.price{font-family:"Cormorant Garamond",serif;color:var(--gold2);font-size:clamp(58px,8vw,92px);line-height:1;margin:18px 0}.deadline{display:inline-block;padding:10px 16px;border:1px solid var(--line);border-radius:999px;color:#f7e8c3;margin-bottom:16px}.offer-box p{max-width:760px;margin:0 auto 20px;color:#ddd5c8;line-height:1.7}.cta-row{justify-content:center;margin-top:28px}.telegram{margin-top:12px;color:var(--muted);font-size:13px}.footer{padding:46px 0 110px;color:#8f8a80;text-align:center;font-size:12px}.sticky{display:none;position:fixed;left:12px;right:12px;bottom:12px;z-index:30;padding:13px 16px;border-radius:999px;text-decoration:none;text-align:center;font-weight:800;background:linear-gradient(135deg,#c89e4f,#f0d593);color:#1a1408;box-shadow:0 18px 50px rgba(0,0,0,.38)}
-@media(max-width:900px){.metrics{grid-template-columns:1fr 1fr}.cards{grid-template-columns:1fr}.program-head{display:block}.offer-box{padding:34px 22px}.sticky{display:block}.footer{padding-bottom:120px}}
-@media(max-width:560px){section{padding:64px 0}.hero{min-height:78vh}.celestial{opacity:.58}.hero-content{padding-bottom:34px}.hero h1{font-size:54px}.subtitle{font-size:25px}.actions .btn,.cta-row .btn{width:100%}.metrics{grid-template-columns:1fr}.practice-box{padding:28px 22px}.lecture button{grid-template-columns:42px 1fr auto;padding:17px 16px}.num{width:38px;height:38px;font-size:21px}.lecture-title{font-size:22px}.lecture-body{padding:0 18px 20px}.section-title{font-size:44px}.lead{font-size:17px}}
-
-.hero-shell{position:relative;z-index:2;width:min(1160px,92vw);margin:auto;display:grid;grid-template-columns:1.05fr .95fr;gap:44px;align-items:center;padding:78px 0 58px}
-.hero-content{padding:0;max-width:none}.hero-copy{font-size:18px;line-height:1.7;color:#e5ded2;max-width:700px;margin:0 0 22px}
-.hero-visual{min-height:520px;position:relative;border:1px solid rgba(217,182,107,.26);border-radius:40px;background:radial-gradient(circle at 50% 44%,rgba(217,182,107,.12),transparent 30%),linear-gradient(150deg,rgba(15,37,62,.66),rgba(5,18,34,.72));box-shadow:0 40px 100px rgba(0,0,0,.3);overflow:hidden}
-.hero-ring{position:absolute;left:50%;top:45%;transform:translate(-50%,-50%);border:1px solid rgba(240,213,147,.28);border-radius:50%}
-.ring-a{width:300px;height:300px}.ring-b{width:410px;height:410px}.ring-c{width:520px;height:520px;opacity:.55}
-.moon{position:absolute;width:150px;height:190px;border:1.4px solid rgba(240,213,147,.6);border-radius:50%;top:135px}
-.moon:after{content:"";position:absolute;width:148px;height:188px;border-radius:50%;background:#0b1c32;top:-1px}
-.moon-left{left:105px}.moon-left:after{left:48px}.moon-right{right:105px}.moon-right:after{right:48px}
-.constellation{position:absolute;color:rgba(240,213,147,.7);letter-spacing:.28em;font-size:18px}.c1{left:42px;top:68px;transform:rotate(-18deg)}.c2{right:35px;bottom:92px;transform:rotate(16deg)}
-.hero-visual-title{position:absolute;left:50%;bottom:34px;transform:translateX(-50%);text-align:center;font-family:"Cormorant Garamond",serif;color:#fff1d0;font-size:28px;line-height:1.05}.hero-visual-title span{color:var(--gold2);font-size:34px}
-.format-panel{display:grid;grid-template-columns:.95fr 1.05fr;gap:42px;align-items:start;padding:42px;border:1px solid var(--line);border-radius:30px;background:linear-gradient(145deg,rgba(16,38,63,.78),rgba(7,22,40,.88));box-shadow:0 30px 85px rgba(0,0,0,.25);position:relative;overflow:hidden}
-.format-panel:after{content:"";position:absolute;width:390px;height:390px;border:1px solid rgba(217,182,107,.12);border-radius:50%;right:-150px;top:-130px;box-shadow:0 0 0 35px rgba(217,182,107,.02),0 0 0 75px rgba(217,182,107,.015)}
-.small-lead{font-size:16px;margin-top:14px}.method-note{margin-top:22px;border-left:2px solid var(--gold);padding:14px 16px;background:rgba(217,182,107,.055);border-radius:0 14px 14px 0;color:#e8dfd0;line-height:1.65}
-.format-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px;position:relative;z-index:1}.format-item{padding:20px;border:1px solid rgba(217,182,107,.27);border-radius:18px;background:rgba(7,23,42,.66)}.format-item b{display:block;font-family:"Cormorant Garamond",serif;color:var(--gold2);font-size:27px;margin-bottom:5px}.format-item span{color:#d8d0c4;font-size:13px;line-height:1.5}
-@media(max-width:980px){.hero-shell,.format-panel{grid-template-columns:1fr}.hero-visual{min-height:420px}.format-grid{grid-template-columns:1fr 1fr}}
-@media(max-width:600px){.hero-shell{padding:54px 0 30px}.hero-visual{min-height:340px}.moon{width:108px;height:142px;top:86px}.moon:after{width:106px;height:140px}.moon-left{left:42px}.moon-left:after{left:34px}.moon-right{right:42px}.moon-right:after{right:34px}.ring-a{width:210px;height:210px}.ring-b{width:285px;height:285px}.ring-c{width:350px;height:350px}.format-panel{padding:28px 20px}.format-grid{grid-template-columns:1fr}}
-
-/* PRESENTATION MATCH + OVERFLOW FIX */
-*{min-width:0}
-.hero{min-height:92vh;align-items:center;background:linear-gradient(90deg,rgba(3,11,23,.94) 0%,rgba(3,11,23,.86) 42%,rgba(3,11,23,.32) 72%,rgba(3,11,23,.18) 100%),url('assets/hero-cover.webp') center center/cover no-repeat !important}
-.hero:after{background:linear-gradient(180deg,rgba(2,8,18,.08) 20%,rgba(2,8,18,.15) 65%,#061222 100%) !important}
-.celestial{display:none !important}
-.hero-shell{display:block !important;width:min(1160px,92vw) !important;margin:auto !important;padding:74px 0 56px !important}
-.hero-content{max-width:700px !important;padding:0 !important}
-.hero-visual{display:none !important}
-.hero h1{font-size:clamp(58px,7vw,92px) !important;line-height:.88 !important}
-.hero .subtitle{font-size:clamp(27px,3vw,39px) !important;line-height:1.08 !important;max-width:620px}
-.hero-copy{max-width:660px !important;font-size:17px !important;line-height:1.68 !important}
-.hero .chips{max-width:690px}.hero .actions{margin-top:22px}
-.format-panel,.practice-box,.mid-cta,.offer-box{border:1px solid rgba(217,182,107,.5) !important;background:radial-gradient(circle at 82% 18%,rgba(217,182,107,.10),transparent 24%),linear-gradient(145deg,rgba(16,38,64,.94),rgba(7,21,38,.97)) !important;box-shadow:0 26px 72px rgba(0,0,0,.32) !important;overflow:hidden !important;position:relative !important}
-.format-panel:before,.practice-box:before,.mid-cta:before,.offer-box:before{content:"";position:absolute;width:320px;height:320px;border:1px solid rgba(217,182,107,.16);border-radius:50%;right:-105px;top:-105px;box-shadow:0 0 0 34px rgba(217,182,107,.025),0 0 0 68px rgba(217,182,107,.016);pointer-events:none}
-.format-panel>* ,.practice-box>* ,.mid-cta>* ,.offer-box>*{position:relative;z-index:1}
-.format-panel{padding:40px !important;gap:30px !important}.practice-box{padding:40px !important}.offer-box{padding:42px 34px !important}.mid-cta{padding:32px 28px !important}
-.metric,.card,.lecture,.format-card{border:1px solid rgba(217,182,107,.38) !important;background:linear-gradient(180deg,rgba(16,38,64,.91),rgba(8,23,40,.94)) !important;box-shadow:0 18px 50px rgba(0,0,0,.25) !important}
-.section-title{font-size:clamp(36px,4.4vw,58px) !important;line-height:1.04 !important;max-width:100% !important;overflow-wrap:anywhere}
-.lead{font-size:17px !important;line-height:1.68 !important;max-width:860px !important}
-.card h3,.format-card h3,.lecture-title,.mid-cta h3{max-width:100% !important;overflow-wrap:anywhere;word-break:normal}
-.format-card b{font-size:clamp(22px,2vw,28px) !important;line-height:1.08 !important}
-.format-card{min-height:0 !important;padding:22px !important;overflow:hidden !important}
-.format-grid{grid-template-columns:repeat(2,minmax(0,1fr)) !important;gap:14px !important}
-.cards{grid-template-columns:repeat(2,minmax(0,1fr)) !important}
-.metrics{grid-template-columns:repeat(4,minmax(0,1fr)) !important}
-.program-head{align-items:start !important}.program-head>*,.lecture button>*{min-width:0}
-.lecture button{grid-template-columns:54px minmax(0,1fr) 30px !important}
-.lecture-title{font-size:clamp(21px,2vw,26px) !important;line-height:1.16 !important}
-.mid-cta h3{font-size:clamp(30px,3.4vw,42px) !important;line-height:1.08 !important;margin:0 auto 12px !important;max-width:820px !important}
-.mid-cta p{max-width:760px !important;margin:0 auto 20px !important;line-height:1.6 !important;color:#d8d0c4 !important}
-.offer-box .section-title{max-width:900px !important;margin-left:auto !important;margin-right:auto !important}
-.offer-box p{max-width:800px !important}.deadline{max-width:100%;white-space:normal;line-height:1.4}.btn{white-space:normal;text-align:center;line-height:1.25}
-section{padding:68px 0 !important}#format{padding-top:64px !important}.format-copy{position:static !important}
-@media(max-width:980px){.hero{background-position:62% center !important}.format-panel{grid-template-columns:1fr !important}.format-grid{grid-template-columns:repeat(2,minmax(0,1fr)) !important}.metrics{grid-template-columns:repeat(2,minmax(0,1fr)) !important}.cards{grid-template-columns:1fr !important}}
-@media(max-width:620px){section{padding:48px 0 !important}.hero{min-height:auto !important;background-position:64% center !important}.hero-shell{padding:52px 0 36px !important}.hero h1{font-size:54px !important}.hero .subtitle{font-size:26px !important}.hero-copy{font-size:15px !important;line-height:1.62 !important}.hero .chip{font-size:12px;padding:9px 12px}.format-panel,.practice-box,.offer-box{padding:26px 20px !important;border-radius:22px !important}.format-grid,.metrics,.cards{grid-template-columns:1fr !important}.format-card{padding:20px !important}.section-title{font-size:38px !important}.lead{font-size:16px !important}.lecture button{grid-template-columns:40px minmax(0,1fr) 26px !important;padding:16px 14px !important;gap:10px !important}.lecture-title{font-size:20px !important}.lecture-body{padding:0 16px 18px !important}.mid-cta{padding:26px 18px !important}.mid-cta h3{font-size:30px !important}.price{font-size:60px !important}.actions .btn,.cta-row .btn{width:100%}}
-
-/* MOBILE UX FIX: static program, stronger section separation */
-details.lecture{display:block}
-details.lecture summary{list-style:none;cursor:pointer;display:grid;grid-template-columns:54px minmax(0,1fr) 30px;gap:16px;align-items:center;padding:20px 22px}
-details.lecture summary::-webkit-details-marker{display:none}
-details.lecture .lecture-body{display:none}
-details.lecture[open] .lecture-body{display:block}
-details.lecture[open] .plus{transform:rotate(45deg)}
-#program{background:linear-gradient(180deg,rgba(6,18,34,.2),rgba(11,29,51,.72),rgba(6,18,34,.2));border-top:1px solid rgba(217,182,107,.15);border-bottom:1px solid rgba(217,182,107,.15)}
-#program .program-head{padding-bottom:14px;border-bottom:1px solid rgba(217,182,107,.18)}
-#program .lectures{margin-top:24px}
-main>section:nth-of-type(2),main>section:nth-of-type(4){background:rgba(9,27,48,.28);border-top:1px solid rgba(217,182,107,.1);border-bottom:1px solid rgba(217,182,107,.1)}
-@media(max-width:620px){
-  body{padding-bottom:88px}
-  .wrap{width:calc(100vw - 32px) !important}
-  main>section{padding:44px 0 !important;position:relative}
-  main>section+section:before{content:"";position:absolute;left:16px;right:16px;top:0;height:1px;background:linear-gradient(90deg,transparent,rgba(217,182,107,.35),transparent)}
-  .eyebrow{font-size:11px !important;letter-spacing:.16em !important}
-  .section-title{font-size:34px !important;line-height:1.02 !important;margin:8px 0 14px !important}
-  .lead{font-size:15.5px !important;line-height:1.62 !important}
-  .format-panel,.practice-box,.offer-box,.mid-cta{border-radius:20px !important}
-  .format-panel{padding:24px 18px !important}
-  .method-note{font-size:14px !important;line-height:1.55 !important}
-  .format-grid{gap:10px !important}
-  .format-item{padding:16px !important;border-radius:15px !important}
-  .format-item b{font-size:23px !important}
-  .format-item span{font-size:12.5px !important}
-  .metrics{gap:10px !important;margin-top:22px !important}
-  .metric{padding:18px !important;border-radius:16px !important}
-  .metric b{font-size:27px !important}
-  .cards{gap:12px !important;margin-top:22px !important}
-  .card{padding:20px !important;border-radius:17px !important}
-  .card h3{font-size:26px !important}
-  .card p{font-size:14px !important;line-height:1.55 !important}
-  #program .program-head{margin-bottom:0 !important}
-  #program .program-head p{font-size:15px !important;line-height:1.55 !important;margin:10px 0 0 !important}
-  #program .lectures{margin-top:18px !important;gap:10px !important}
-  details.lecture{border-radius:17px !important}
-  details.lecture summary{grid-template-columns:38px minmax(0,1fr) 22px !important;gap:10px !important;padding:15px 14px !important}
-  details.lecture .num{width:36px !important;height:36px !important;font-size:19px !important}
-  details.lecture .lecture-title{font-size:19px !important;line-height:1.13 !important}
-  details.lecture .plus{font-size:22px !important}
-  details.lecture .lecture-body{padding:0 15px 16px 15px !important}
-  details.lecture .lecture-body h4{font-size:14px !important;margin:15px 0 7px !important}
-  details.lecture .lecture-body ul{font-size:14px !important;line-height:1.5 !important;padding-left:19px !important}
-  .outcome{font-size:14px !important;line-height:1.5 !important;padding:11px 13px !important}
-  .mid-cta{margin-top:28px !important;padding:22px 16px !important}
-  .mid-cta h3{font-size:27px !important;line-height:1.05 !important}
-  .mid-cta p{font-size:14px !important;line-height:1.55 !important}
-  .offer-box{padding:26px 18px !important}
-  .offer-box p{font-size:15px !important;line-height:1.6 !important}
-  .price{font-size:54px !important}
-  .deadline{font-size:13px !important}
-  .sticky{left:16px !important;right:16px !important;bottom:max(10px,env(safe-area-inset-bottom)) !important;padding:13px 16px !important;font-size:15px !important}
+:root{--bg:#050f1d;--panel:#0b1b30;--panel2:#0e223b;--gold:#e0b964;--gold2:#f3d58b;--text:#f7f1e5;--muted:#c4bdaf;--line:rgba(224,185,100,.42)}
+*{box-sizing:border-box;min-width:0}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--text);font-family:Manrope,system-ui,sans-serif;overflow-x:hidden;padding-bottom:0}
+body:before{content:"";position:fixed;inset:0;z-index:-2;background:radial-gradient(circle at 15% 10%,#173453 0,transparent 28%),radial-gradient(circle at 82% 36%,rgba(122,77,26,.12),transparent 24%),linear-gradient(#061222,#050f1d 55%,#061222)}
+body:after{content:"";position:fixed;inset:0;z-index:-1;opacity:.24;pointer-events:none;background-image:radial-gradient(circle,#f3d58b 0 1px,transparent 1.5px);background-size:137px 137px;background-position:17px 29px}
+.wrap{width:min(1080px,calc(100% - 40px));margin:auto}.serif,h1,h2,h3{font-family:"Cormorant Garamond",serif}.eyebrow{font-size:12px;letter-spacing:.19em;text-transform:uppercase;color:var(--gold2);font-weight:700}.gold{color:var(--gold2)}
+.hero{position:relative;min-height:100svh;display:flex;align-items:flex-end;overflow:hidden;background:#061222}
+.hero-bg{position:absolute;inset:0;background-image:linear-gradient(180deg,rgba(3,10,20,.08) 0%,rgba(3,10,20,.12) 35%,rgba(3,10,20,.82) 75%,#050f1d 100%),linear-gradient(90deg,rgba(3,10,20,.86) 0%,rgba(3,10,20,.35) 55%,rgba(3,10,20,.1) 100%),url('assets/hero-cover.webp?v=10');background-size:cover;background-position:center}
+.hero-bg:after{content:"";position:absolute;width:540px;height:540px;border:1px solid rgba(243,213,139,.28);border-radius:50%;right:4%;top:8%;box-shadow:0 0 0 48px rgba(243,213,139,.025),0 0 0 96px rgba(243,213,139,.015)}
+.hero-inner{position:relative;z-index:2;width:min(1080px,calc(100% - 40px));margin:auto;padding:78px 0 54px}.hero-copy{max-width:650px}
+.hero h1{font-size:clamp(64px,8vw,102px);line-height:.82;margin:12px 0 18px;color:var(--gold2);text-shadow:0 4px 30px rgba(0,0,0,.5)}.subtitle{font:600 clamp(28px,3.2vw,40px)/1.04 "Cormorant Garamond",serif;margin:0 0 22px}.hero p{font-size:17px;line-height:1.7;color:#eee6d8;max-width:640px}
+.hero-facts{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:28px 0}.fact{padding:15px 14px;border:1px solid var(--line);border-radius:18px;background:rgba(5,17,31,.68);backdrop-filter:blur(8px)}.fact b{display:block;color:var(--gold2);font-size:14px;margin-bottom:4px}.fact span{font-size:11.5px;color:#ddd4c5;line-height:1.4}
+.btn{display:inline-flex;justify-content:center;align-items:center;text-decoration:none;border-radius:999px;padding:16px 24px;font-weight:800;border:1px solid var(--gold);transition:.2s;text-align:center}.primary{background:linear-gradient(120deg,#c79743,#f4d98f,#d4a653);color:#171006;box-shadow:0 12px 38px rgba(216,173,81,.24)}.secondary{color:var(--gold2);background:rgba(6,18,34,.72)}.actions{display:flex;gap:10px;flex-wrap:wrap}
+.divider{height:70px;display:flex;align-items:center;gap:15px;width:min(920px,80%);margin:auto;color:var(--gold2)}.divider:before,.divider:after{content:"";height:1px;flex:1;background:linear-gradient(90deg,transparent,var(--line))}.divider:after{background:linear-gradient(90deg,var(--line),transparent)}.divider span{font-family:"Cormorant Garamond";font-size:22px;letter-spacing:.25em}
+section{padding:64px 0}.section-head{max-width:820px;margin-bottom:28px}.section-title{font-size:clamp(42px,5vw,62px);line-height:.98;margin:8px 0 14px;color:var(--gold2)}.lead{font-size:17px;line-height:1.72;color:#e4dccf;margin:0}
+.panel{border:1px solid var(--line);border-radius:28px;background:linear-gradient(145deg,rgba(15,37,61,.94),rgba(6,19,35,.97));box-shadow:0 25px 80px rgba(0,0,0,.32);overflow:hidden}
+.about{display:grid;grid-template-columns:1.08fr .92fr}.about-copy{padding:38px}.about-art{min-height:380px;background:linear-gradient(180deg,rgba(5,15,29,.02),rgba(5,15,29,.35)),url('assets/hero-cover.webp?v=10') 72% center/cover no-repeat;position:relative}.about-art:after{content:"☾  ✦  ♡";position:absolute;left:0;right:0;bottom:20px;text-align:center;color:var(--gold2);font:28px "Cormorant Garamond";letter-spacing:.25em;text-shadow:0 2px 14px #000}
+.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}.card{border:1px solid rgba(224,185,100,.34);border-radius:20px;padding:24px;background:linear-gradient(160deg,rgba(14,35,59,.94),rgba(6,19,34,.94))}.icon{width:45px;height:45px;border:1px solid var(--line);border-radius:50%;display:grid;place-items:center;color:var(--gold2);font:26px "Cormorant Garamond";margin-bottom:14px}.card h3{font-size:29px;line-height:1;margin:0 0 8px;color:var(--gold2)}.card p{font-size:14px;line-height:1.6;color:#d9d1c4;margin:0}
+.results{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}.result{display:flex;gap:15px;align-items:flex-start;padding:20px;border-bottom:1px solid rgba(224,185,100,.18)}.result i{font-style:normal;color:var(--gold2);font-size:22px}.result b{font:600 23px/1.05 "Cormorant Garamond";color:#fff0cf}.result span{display:block;font-size:13px;line-height:1.5;color:#cfc7ba;margin-top:5px}
+.relationships{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}.relation{min-height:210px;padding:24px;display:flex;flex-direction:column;justify-content:flex-end;position:relative;overflow:hidden;border:1px solid var(--line);border-radius:22px;background:radial-gradient(circle at 82% 18%,rgba(224,185,100,.15),transparent 28%),linear-gradient(145deg,#102a48,#081a2e)}.relation:before{content:"";position:absolute;width:170px;height:170px;border:1px solid rgba(243,213,139,.17);border-radius:50%;right:-38px;top:-38px;box-shadow:0 0 0 25px rgba(243,213,139,.02)}.relation .symbol{position:absolute;right:22px;top:14px;font:54px "Cormorant Garamond";color:rgba(243,213,139,.35)}.relation h3{font-size:32px;margin:0 0 6px;color:var(--gold2)}.relation p{font-size:13px;line-height:1.5;color:#ddd4c6;margin:0;max-width:78%}
+.program-head{display:flex;justify-content:space-between;align-items:end;gap:25px;margin-bottom:22px}.program-head p{max-width:470px;color:var(--muted);line-height:1.55}.lectures{display:grid;gap:10px}details{border:1px solid rgba(224,185,100,.34);border-radius:18px;background:linear-gradient(160deg,rgba(14,35,59,.94),rgba(6,19,34,.94));overflow:hidden}summary{list-style:none;cursor:pointer;display:grid;grid-template-columns:42px minmax(0,1fr) 24px;gap:12px;align-items:center;padding:15px 17px}summary::-webkit-details-marker{display:none}.num{width:36px;height:36px;border:1px solid var(--line);border-radius:50%;display:grid;place-items:center;color:var(--gold2);font:600 20px "Cormorant Garamond"}.lecture-title{font:600 23px/1.08 "Cormorant Garamond";color:#fff0d1}.plus{color:var(--gold2);font-size:23px;transition:.2s}details[open] .plus{transform:rotate(45deg)}.lecture-body{padding:0 18px 18px 71px;border-top:1px solid rgba(224,185,100,.13)}.lecture-body h4{color:var(--gold2);margin:16px 0 7px}.lecture-body ul{padding-left:18px;margin:0 0 13px;color:#d8d0c4;font-size:14px;line-height:1.55}.outcome{border-left:2px solid var(--gold);padding:10px 12px;background:rgba(224,185,100,.06);font-size:14px;line-height:1.55;color:#f0e6d5}
+.format{display:grid;grid-template-columns:.9fr 1.1fr;gap:22px;align-items:stretch}.format-copy{padding:34px}.format-list{display:grid;grid-template-columns:1fr 1fr;gap:10px}.format-item{border:1px solid rgba(224,185,100,.32);border-radius:18px;padding:19px;background:rgba(8,25,44,.76)}.format-item b{display:block;font:600 25px "Cormorant Garamond";color:var(--gold2);margin-bottom:5px}.format-item span{font-size:12.5px;line-height:1.45;color:#d5cdbf}
+.offer{padding:38px;text-align:center;position:relative;background:radial-gradient(circle at 80% 18%,rgba(224,185,100,.18),transparent 24%),linear-gradient(145deg,#102a48,#07182b)}.offer:before{content:"";position:absolute;inset:12px;border:1px solid rgba(243,213,139,.14);border-radius:20px;pointer-events:none}.price{font:600 clamp(58px,8vw,86px)/1 "Cormorant Garamond";color:var(--gold2);margin:12px 0}.offer p{max-width:730px;margin:0 auto 18px;color:#ded6c8;line-height:1.65}.deadline{display:inline-block;border:1px solid var(--line);border-radius:999px;padding:9px 15px;color:#f2dfb1;margin-bottom:16px}.offer .actions{justify-content:center}
+.footer{text-align:center;padding:40px 20px 105px;color:#8f897d;font-size:12px}.sticky{display:none}
+@media(max-width:820px){.hero-facts{grid-template-columns:1fr 1fr}.about,.format{grid-template-columns:1fr}.about-art{min-height:310px}.results,.relationships{grid-template-columns:1fr}.program-head{display:block}.program-head p{margin-top:8px}.grid{grid-template-columns:1fr}}
+@media(max-width:600px){
+ body{padding-bottom:86px}.wrap,.hero-inner{width:calc(100% - 30px)}
+ .hero{min-height:100svh;align-items:flex-end}.hero-bg{background-image:linear-gradient(180deg,rgba(3,10,20,.05) 0%,rgba(3,10,20,.2) 34%,rgba(3,10,20,.92) 65%,#050f1d 100%),url('assets/hero-cover.webp?v=10');background-position:68% center}
+ .hero-bg:after{width:300px;height:300px;right:-70px;top:11%}.hero-inner{padding:300px 0 30px}.hero h1{font-size:56px;line-height:.84;margin:8px 0 14px}.subtitle{font-size:27px;margin-bottom:14px}.hero p{font-size:14.5px;line-height:1.55}.hero-facts{gap:7px;margin:18px 0}.fact{padding:11px;border-radius:14px}.fact b{font-size:12px}.fact span{font-size:10.5px}.actions .btn{width:100%}.btn{padding:14px 18px}
+ section{padding:45px 0}.divider{height:40px;width:88%}.section-title{font-size:38px}.lead{font-size:15px;line-height:1.6}.panel{border-radius:20px}.about-copy,.format-copy,.offer{padding:24px 18px}.about-art{min-height:240px}
+ .card{padding:19px}.card h3{font-size:27px}.results{gap:0}.result{padding:16px 8px}.result b{font-size:21px}.relationships{gap:9px}.relation{min-height:170px;padding:19px}.relation h3{font-size:28px}.relation p{max-width:86%}
+ .program-head{margin-bottom:15px}.program-head p{font-size:13.5px}.lectures{gap:8px}summary{grid-template-columns:36px minmax(0,1fr) 20px;padding:13px 12px;gap:9px}.num{width:33px;height:33px;font-size:18px}.lecture-title{font-size:19px}.lecture-body{padding:0 13px 14px}.lecture-body h4{font-size:13px}.lecture-body ul,.outcome{font-size:13px}
+ .format-list{grid-template-columns:1fr 1fr;gap:8px}.format-item{padding:14px}.format-item b{font-size:21px}.format-item span{font-size:11px}.price{font-size:60px}.offer p{font-size:14px}.deadline{font-size:12px}
+ .sticky{display:block;position:fixed;left:15px;right:15px;bottom:max(10px,env(safe-area-inset-bottom));z-index:50;text-decoration:none;text-align:center;padding:14px;border-radius:999px;font-weight:800;background:linear-gradient(120deg,#c79743,#f4d98f,#d4a653);color:#171006;box-shadow:0 15px 45px rgba(0,0,0,.48)}
 }
-
-/* FESTIVE ASTROLOGY VISUAL UPGRADE */
-main{position:relative}
-main:before{content:"";position:fixed;inset:0;pointer-events:none;z-index:-1;background:
-radial-gradient(circle at 12% 18%,rgba(240,213,147,.08),transparent 18%),
-radial-gradient(circle at 88% 34%,rgba(92,130,179,.10),transparent 22%),
-radial-gradient(circle at 52% 72%,rgba(217,182,107,.06),transparent 20%)}
-.section-divider{width:min(1120px,90vw);height:56px;margin:0 auto;display:flex;align-items:center;justify-content:center;gap:14px;color:var(--gold2);opacity:.9}
-.section-divider:before,.section-divider:after{content:"";height:1px;flex:1;background:linear-gradient(90deg,transparent,rgba(217,182,107,.55))}
-.section-divider:after{background:linear-gradient(90deg,rgba(217,182,107,.55),transparent)}
-.section-divider span{font-family:"Cormorant Garamond",serif;font-size:25px;letter-spacing:.18em;text-shadow:0 0 18px rgba(240,213,147,.35)}
-#format .format-panel{background:
-linear-gradient(145deg,rgba(5,18,34,.86),rgba(8,28,49,.93)),
-radial-gradient(circle at 82% 8%,rgba(240,213,147,.14),transparent 26%) !important}
-.format-panel:after{opacity:.9}
-.format-item{position:relative;overflow:hidden;background:linear-gradient(160deg,rgba(16,39,65,.96),rgba(7,21,39,.93)) !important}
-.format-item:before{content:"✦";position:absolute;right:14px;top:8px;color:rgba(240,213,147,.18);font-size:24px}
-.format-item:nth-child(2n):before{content:"☾"}
-.format-item b{padding-right:24px}
-.astro-ornament{position:absolute;inset:auto -80px -90px auto;width:250px;height:250px;border:1px solid rgba(217,182,107,.16);border-radius:50%;box-shadow:0 0 0 28px rgba(217,182,107,.025),0 0 0 56px rgba(217,182,107,.016);pointer-events:none}
-.astro-ornament:before,.astro-ornament:after{content:"";position:absolute;left:50%;top:50%;background:rgba(217,182,107,.16);transform:translate(-50%,-50%)}
-.astro-ornament:before{width:1px;height:100%}.astro-ornament:after{width:100%;height:1px}
-.practice-box{display:grid;grid-template-columns:1.02fr .98fr;gap:30px;align-items:stretch}
-.practice-copy{align-self:center}
-.practice-art{min-height:330px;border-radius:24px;border:1px solid rgba(217,182,107,.42);background:
-linear-gradient(180deg,rgba(4,14,27,.06),rgba(4,14,27,.52)),
-url('assets/hero-cover.webp?v=love2') 31% center/cover no-repeat;box-shadow:inset 0 0 45px rgba(0,0,0,.24);position:relative;overflow:hidden}
-.practice-art:after{content:"♡";position:absolute;right:18px;bottom:6px;font-family:"Cormorant Garamond",serif;font-size:92px;color:rgba(240,213,147,.26);text-shadow:0 0 22px rgba(240,213,147,.2)}
-.romance-section{padding:54px 0 !important}
-.romance-head{text-align:center;max-width:800px;margin:0 auto 28px}
-.romance-head .section-title{margin-left:auto;margin-right:auto}
-.romance-gallery{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
-.romance-card{min-height:330px;border:1px solid rgba(217,182,107,.42);border-radius:26px;overflow:hidden;position:relative;background-image:linear-gradient(180deg,rgba(4,13,25,.08) 32%,rgba(4,13,25,.92) 100%),url('assets/hero-cover.webp?v=love2');background-size:cover;box-shadow:0 24px 65px rgba(0,0,0,.34)}
-.romance-card:nth-child(1){background-position:26% center}.romance-card:nth-child(2){background-position:50% center}.romance-card:nth-child(3){background-position:75% center}
-.romance-card:before{content:"";position:absolute;inset:14px;border:1px solid rgba(240,213,147,.25);border-radius:18px;pointer-events:none}
-.romance-caption{position:absolute;left:26px;right:26px;bottom:26px;z-index:1}
-.romance-caption b{display:block;font-family:"Cormorant Garamond",serif;font-size:31px;color:var(--gold2);margin-bottom:5px}
-.romance-caption span{font-size:13px;line-height:1.5;color:#eee5d7}
-.cards .card{position:relative;overflow:hidden;padding-top:64px !important}
-.cards .card:before{position:absolute;left:26px;top:18px;font-family:"Cormorant Garamond",serif;font-size:34px;color:var(--gold2);text-shadow:0 0 18px rgba(240,213,147,.18)}
-.cards .card:nth-child(1):before{content:"♡"}.cards .card:nth-child(2):before{content:"☾"}.cards .card:nth-child(3):before{content:"✦"}.cards .card:nth-child(4):before{content:"☉"}
-#program{position:relative;overflow:hidden}
-#program:after{content:"";position:absolute;width:430px;height:430px;border:1px solid rgba(217,182,107,.08);border-radius:50%;right:-160px;top:80px;box-shadow:0 0 0 48px rgba(217,182,107,.012),0 0 0 96px rgba(217,182,107,.008);pointer-events:none}
-#program .wrap{position:relative;z-index:1}
-.program-head{position:relative;padding:25px 28px !important;border:1px solid rgba(217,182,107,.24) !important;border-radius:24px;background:linear-gradient(145deg,rgba(13,36,60,.72),rgba(6,20,37,.66))}
-.program-head:after{content:"☾ ✦ ☉ ✦ ☾";position:absolute;right:28px;bottom:17px;color:rgba(240,213,147,.25);letter-spacing:.22em;font-size:19px}
-details.lecture{transition:transform .2s,border-color .2s}
-details.lecture:hover{transform:translateY(-1px);border-color:rgba(240,213,147,.58) !important}
-.offer-box{background:
-linear-gradient(90deg,rgba(4,14,27,.92),rgba(4,14,27,.82)),
-url('assets/hero-cover.webp?v=love2') 15% center/cover no-repeat !important;text-shadow:0 1px 8px rgba(0,0,0,.28)}
-.offer-box:after{content:"♡";position:absolute;left:28px;bottom:8px;font-family:"Cormorant Garamond",serif;font-size:120px;color:rgba(240,213,147,.12);pointer-events:none}
-@media(max-width:900px){
- .practice-box{grid-template-columns:1fr}.practice-art{min-height:280px}
- .romance-gallery{grid-template-columns:1fr 1fr}.romance-card:nth-child(3){grid-column:1/-1}
-}
-@media(max-width:620px){
- .section-divider{height:38px}.section-divider span{font-size:18px}
- .practice-box{gap:18px !important}.practice-art{min-height:250px;border-radius:18px}
- .romance-section{padding:38px 0 !important}.romance-head{margin-bottom:18px}
- .romance-gallery{grid-template-columns:1fr;gap:12px}
- .romance-card,.romance-card:nth-child(3){grid-column:auto;min-height:250px;border-radius:20px}
- .romance-card:before{inset:10px;border-radius:14px}
- .romance-caption{left:22px;right:22px;bottom:20px}
- .romance-caption b{font-size:28px}.romance-caption span{font-size:13px}
- .cards .card{padding-top:58px !important}
- .program-head{padding:20px 18px !important;border-radius:18px}
- .program-head:after{display:none}
- .offer-box{background:linear-gradient(180deg,rgba(4,14,27,.83),rgba(4,14,27,.94)),url('assets/hero-cover.webp?v=love2') 28% center/cover no-repeat !important}
-}
-
-/* VISIBLE ROMANTIC ART — final mobile/desktop pass */
-.hero{
-  min-height:auto !important;
-  align-items:center !important;
-  background:
-    radial-gradient(circle at 15% 12%,rgba(50,92,137,.20),transparent 26%),
-    linear-gradient(180deg,#071426 0%,#081a2f 60%,#061222 100%) !important;
-}
-.hero-shell{
-  display:grid !important;
-  grid-template-columns:minmax(0,1fr) minmax(360px,.88fr) !important;
-  gap:42px !important;
-  align-items:center !important;
-  padding:70px 0 54px !important;
-}
-.hero-content{max-width:700px !important}
-.hero-visual{
-  display:block !important;
-  min-height:530px !important;
-  border:1px solid rgba(217,182,107,.52) !important;
-  border-radius:34px !important;
-  background:
-    linear-gradient(180deg,rgba(3,12,24,.03),rgba(3,12,24,.20)),
-    url('assets/hero-love.svg?v=3') center/cover no-repeat !important;
-  box-shadow:0 30px 90px rgba(0,0,0,.38), inset 0 0 0 1px rgba(240,213,147,.08) !important;
-  overflow:hidden !important;
-}
-.hero-visual:after{
-  content:"";
-  position:absolute;inset:12px;
-  border:1px solid rgba(240,213,147,.20);
-  border-radius:25px;
-  pointer-events:none;
-}
-.hero-ring,.moon,.constellation,.hero-visual-title{display:none !important}
-.practice-art{
-  background:
-    linear-gradient(180deg,rgba(4,14,27,.03),rgba(4,14,27,.20)),
-    url('assets/hands-love.svg?v=3') center/cover no-repeat !important;
-}
-.romance-card{background-image:
-  linear-gradient(180deg,rgba(4,13,25,.04) 32%,rgba(4,13,25,.92) 100%),
-  url('assets/couple-love.svg?v=3') !important;
-}
-.romance-card:nth-child(1){background-position:35% center !important}
-.romance-card:nth-child(2){background-position:50% center !important}
-.romance-card:nth-child(3){background-position:65% center !important}
-.offer-box{
-  background:
-    linear-gradient(90deg,rgba(4,14,27,.93),rgba(4,14,27,.72)),
-    url('assets/couple-love.svg?v=3') center/cover no-repeat !important;
-}
-@media(max-width:980px){
-  .hero-shell{grid-template-columns:1fr !important}
-  .hero-visual{min-height:390px !important}
-}
-@media(max-width:620px){
-  .hero-shell{display:flex !important;flex-direction:column !important;gap:22px !important;padding:26px 0 38px !important}
-  .hero-visual{
-    order:-1 !important;
-    width:100% !important;
-    min-height:310px !important;
-    border-radius:22px !important;
-    background-position:center 42% !important;
-  }
-  .hero-visual:after{inset:9px;border-radius:16px}
-  .hero-content{width:100% !important}
-  .hero h1{font-size:48px !important;line-height:.92 !important;margin-top:8px !important}
-  .hero .subtitle{font-size:25px !important}
-  .hero-copy{font-size:15px !important;line-height:1.6 !important}
-  .hero .chips{gap:8px !important}
-  .hero .chip{font-size:11.5px !important;padding:8px 10px !important}
-  .practice-art{min-height:235px !important;background-position:center !important}
-  .romance-card{min-height:245px !important}
-  .offer-box{background-position:58% center !important}
-}
-</style>
-</head>
+</style></head>
 <body>
-<header class="hero" id="top">
-<div class="celestial" aria-hidden="true">
-<svg viewBox="0 0 1600 1000" preserveAspectRatio="xMidYMid slice">
-<circle class="orbit" cx="800" cy="355" r="238"/><circle class="fine" cx="800" cy="355" r="305"/><circle class="fine" cx="800" cy="355" r="365"/>
-<path class="fine" d="M355 355H1245M800 70V760M485 138L1115 572M1115 138L485 572"/>
-<path class="profile" d="M580 460c-18-48-22-95-4-138 18-43 61-78 112-84 28-3 54 4 75 18-29 18-48 45-55 79-5 24-1 47 8 67-22 8-42 23-56 44-17 24-23 49-19 79-25-10-47-31-61-65z"/>
-<path class="profile" d="M1020 460c18-48 22-95 4-138-18-43-61-78-112-84-28-3-54 4-75 18 29 18 48 45 55 79 5 24 1 47-8 67 22 8 42 23 56 44 17 24 23 49 19 79 25-10 47-31 61-65z"/>
-<path class="fine" d="M720 585c51 24 109 24 160 0M702 618c64 35 132 35 196 0"/>
-<circle class="star" cx="317" cy="182" r="2.2"/><circle class="star" cx="1195" cy="214" r="1.8"/><circle class="star" cx="1260" cy="510" r="2.2"/><circle class="star" cx="402" cy="625" r="1.9"/><circle class="star" cx="972" cy="98" r="1.8"/><circle class="star" cx="624" cy="118" r="1.6"/>
-</svg>
-</div>
-<div class="wrap hero-shell">
-  <div class="hero-content">
-    <div class="eyebrow">Школа Татьяны Лукашевич</div>
-    <h1>Модуль 4<br>Синастрия</h1>
-    <p class="subtitle">Принципы взаимодействия двух гороскопов</p>
-    <p class="hero-copy">Этот модуль — о том, почему люди встречаются, что раскрывают друг в друге и как по двум натальным картам увидеть притяжение, напряжение, сильные стороны пары и смысл отношений.</p>
-    <div class="chips">
-      <span class="chip">12 живых онлайн-лекций</span>
-      <span class="chip">1–1,5 часа каждая</span>
-      <span class="chip">Можно задавать вопросы Татьяне</span>
-      <span class="chip">Практика на картах учеников</span>
-    </div>
-    <div class="actions"><a class="btn primary" href="#program">Посмотреть программу</a><a class="btn secondary" href="#offer">Присоединиться к модулю</a></div>
-  </div>
-  <div class="hero-visual" aria-hidden="true">
-    <div class="hero-ring ring-a"></div><div class="hero-ring ring-b"></div><div class="hero-ring ring-c"></div>
-    <div class="moon moon-left"></div><div class="moon moon-right"></div>
-    <div class="constellation c1">✦ · ✧ · ✦</div><div class="constellation c2">✧ · ✦ · ✧</div>
-    <div class="hero-visual-title">две карты<br><span>одна история</span></div>
-  </div>
-</div>
-</header>
-
+<header class="hero"><div class="hero-bg"></div><div class="hero-inner"><div class="hero-copy">
+<div class="eyebrow">Школа Татьяны Лукашевич</div><h1>Модуль 4<br>Синастрия</h1>
+<div class="subtitle">Принципы взаимодействия двух гороскопов</div>
+<p>Модуль о том, почему люди встречаются, что раскрывают друг в друге и как по двум натальным картам увидеть смысл, притяжение, напряжение и задачу отношений.</p>
+<div class="hero-facts"><div class="fact"><b>12 лекций</b><span>живой онлайн-формат</span></div><div class="fact"><b>1–1,5 часа</b><span>каждое занятие</span></div><div class="fact"><b>Вопросы</b><span>Татьяне во время урока</span></div><div class="fact"><b>Практика</b><span>на картах учеников</span></div></div>
+<div class="actions"><a class="btn primary" href="#offer">Присоединиться к модулю</a><a class="btn secondary" href="#program">Посмотреть программу</a></div>
+</div></div></header>
 <main>
-<section id="format"><div class="wrap"><div class="format-panel"><div class="astro-ornament" aria-hidden="true"></div>
-  <div>
-    <div class="eyebrow">Как проходит обучение</div>
-    <h2 class="section-title">Живые занятия, а не просто набор записей</h2>
-    <p class="lead">Модуль проходит <strong>в живом онлайн-формате</strong> — как занятия в университете: вы учитесь вместе с преподавателем в реальном времени, слышите разборы и можете задавать вопросы по ходу лекции.</p>
-    <p class="lead small-lead">Если в конкретный день не получается подключиться — ничего не теряется. <strong>Каждая лекция остаётся в записи и загружается в личный кабинет</strong>, поэтому её можно посмотреть тогда, когда удобно, и при необходимости пересмотреть позже.</p>
-    <div class="method-note">К каждому уроку прилагается <strong>методичка</strong> — основные материалы и опорные схемы остаются под рукой.</div>
-  </div>
-  <div class="format-grid">
-    <div class="format-item"><b>Онлайн</b><span>живые лекции вместе с Татьяной</span></div>
-    <div class="format-item"><b>1–1,5 часа</b><span>каждое занятие</span></div>
-    <div class="format-item"><b>Вопросы</b><span>можно задавать прямо во время урока</span></div>
-    <div class="format-item"><b>Запись</b><span>каждая лекция остаётся в личном кабинете</span></div>
-    <div class="format-item"><b>Методичка</b><span>к каждому уроку</span></div>
-    <div class="format-item"><b>Практика</b><span>на натальных картах учеников</span></div>
-  </div>
+<div class="divider"><span>☾ ✦ ♡ ✦ ☉</span></div>
+<section><div class="wrap"><div class="panel about"><div class="about-copy"><div class="eyebrow">О чём этот модуль</div><h2 class="section-title">Синастрия — это не только про любовь</h2><p class="lead">Это инструмент, который помогает понять себя и другого в отношениях. Увидеть, почему один человек притягивает, с другим легко, а с третьим снова повторяется один и тот же сценарий.</p></div><div class="about-art"></div></div></div></section>
+<section><div class="wrap"><div class="section-head"><div class="eyebrow">Для кого</div><h2 class="section-title">Кому будет полезен модуль</h2></div><div class="grid">
+<div class="card"><div class="icon">♡</div><h3>Для себя</h3><p>Чтобы лучше понимать партнёра, себя и то, что происходит между вами.</p></div>
+<div class="card"><div class="icon">✦</div><h3>Для практики</h3><p>Для астрологов, которые хотят глубже работать с темой совместимости.</p></div>
+<div class="card"><div class="icon">☾</div><h3>Для понимания встреч</h3><p>Чтобы видеть смысл важных связей и повторяющихся сценариев.</p></div>
+<div class="card"><div class="icon">∞</div><h3>Для разных отношений</h3><p>Не только любовь: семья, дети, друзья, работа и значимые люди.</p></div>
 </div></div></section>
-
-<section><div class="wrap"><div class="eyebrow">Что изменится после обучения</div><h2 class="section-title">Вы научитесь видеть отношения глубже</h2><p class="lead">После модуля синастрия перестаёт быть набором разрозненных аспектов. Вы начнёте видеть, что именно связывает людей, где им легко, где возникают сложности и какую роль эти отношения играют в жизни каждого.</p>
-<div class="metrics"><div class="metric"><b>12</b><span>структурных лекций по синастрии</span></div><div class="metric"><b>Практика</b><span>на натальных картах учеников</span></div><div class="metric"><b>Алгоритм</b><span>полного синастрического анализа</span></div><div class="metric"><b>≈ 2 мес.</b><span>последовательного обучения</span></div></div></div></section>
-
-<section><div class="wrap"><div class="practice-box"><div class="practice-art" aria-hidden="true"></div><div class="practice-copy"><div class="eyebrow">Не только теория</div><h2 class="section-title">Практика на реальных натальных картах учеников</h2><p class="lead">Во время модуля Татьяна будет разбирать синастрию на <strong>натальных картах участников обучения</strong>. На таких примерах особенно хорошо видно, как отдельные показатели соединяются в общую картину и как они проявляются в реальных отношениях.</p></div></div></div></section>
-
-<div class="section-divider" aria-hidden="true"><span>✦ ☾ ✦</span></div>
-<section class="romance-section"><div class="wrap">
-  <div class="romance-head"><div class="eyebrow">Синастрия — про живые отношения</div><h2 class="section-title">Увидеть, что происходит между двумя людьми</h2><p class="lead">Не только «совместимы или нет», а откуда берётся притяжение, близость, напряжение и почему некоторые встречи меняют нас сильнее других.</p></div>
-  <div class="romance-gallery">
-    <div class="romance-card"><div class="romance-caption"><b>Притяжение</b><span>Почему именно этот человек цепляет и какие качества партнёры пробуждают друг в друге.</span></div></div>
-    <div class="romance-card"><div class="romance-caption"><b>Близость</b><span>Как устроены эмоциональная, любовная, сексуальная и бытовая совместимость.</span></div></div>
-    <div class="romance-card"><div class="romance-caption"><b>Смысл встречи</b><span>Какая задача стоит за отношениями и чему эта связь может научить обоих.</span></div></div>
-  </div>
-</div></section>
-<div class="section-divider" aria-hidden="true"><span>♡ ✦ ♡</span></div>
-<section><div class="wrap"><div class="eyebrow">Итоговый навык</div><h2 class="section-title">Сможете анализировать разные типы отношений</h2><div class="cards">
-<div class="card"><h3>Любовь и брак</h3><p>Романтическое и сексуальное притяжение, эмоциональная и бытовая совместимость, устойчивость и точки напряжения.</p></div>
-<div class="card"><h3>Родители и дети</h3><p>Как ребёнок активизирует карту родителей, как проявляются семейные сценарии и значимые связи.</p></div>
-<div class="card"><h3>Дружба и работа</h3><p>Почему один и тот же аспект в любовной паре и деловых отношениях проявляется по-разному.</p></div>
-<div class="card"><h3>Эволюционная задача пары</h3><p>Что люди должны прожить и чему научить друг друга — без фатализма и «приговоров» отношениям.</p></div>
+<div class="divider"><span>✦ ☾ ✦</span></div>
+<section><div class="wrap"><div class="panel"><div style="padding:30px"><div class="eyebrow">Результат обучения</div><h2 class="section-title">Вы научитесь видеть отношения глубже</h2></div><div class="results">
+<div class="result"><i>✦</i><div><b>Понимать притяжение</b><span>Почему люди выбирают друг друга и что раскрывают друг в друге.</span></div></div>
+<div class="result"><i>✦</i><div><b>Видеть сильные стороны</b><span>Что поддерживает отношения и создаёт ощущение близости.</span></div></div>
+<div class="result"><i>✦</i><div><b>Находить точки напряжения</b><span>Где возникают конфликты, зависимость и повторяющиеся сценарии.</span></div></div>
+<div class="result"><i>✦</i><div><b>Собирать картину целиком</b><span>Не читать аспекты отдельно, а соединять показатели в живую историю пары.</span></div></div>
+</div></div></div></section>
+<section><div class="wrap"><div class="section-head"><div class="eyebrow">Какие связи разбираем</div><h2 class="section-title">Не только отношения в паре</h2></div><div class="relationships">
+<div class="relation"><span class="symbol">♡</span><h3>Любовь и брак</h3><p>Притяжение, близость, сексуальная, эмоциональная и бытовая совместимость.</p></div>
+<div class="relation"><span class="symbol">☾</span><h3>Родители и дети</h3><p>Семейные сценарии, особенности связи и взаимного влияния.</p></div>
+<div class="relation"><span class="symbol">✦</span><h3>Дружба</h3><p>Почему мы поддерживаем одних людей и отдаляемся от других.</p></div>
+<div class="relation"><span class="symbol">∞</span><h3>Деловые отношения</h3><p>Партнёрство, совместные проекты, роли и точки напряжения.</p></div>
 </div></div></section>
-
-<section id="program"><div class="wrap"><div class="program-head"><div><div class="eyebrow">Программа</div><h2 class="section-title">12 лекций модуля</h2></div><p>Ниже — вся программа. Раскройте любую лекцию, чтобы посмотреть, что будем разбирать и с каким пониманием вы выйдете после урока.</p></div>
-<div class="lectures" id="lectures">
-  <details class="lecture" open>
-    <summary><span class="num">1</span><span class="lecture-title">Философия синастрии и смысл встречи</span><span class="plus">+</span></summary>
-    <div class="lecture-body"><h4>В программе</h4><ul><li>Что изучает синастрия и почему люди встречаются неслучайно</li><li>Отношения как способ раскрытия натальной карты</li><li>Сходство, противоположность, взаимное дополнение и границы анализа</li></ul><div class="outcome"><strong>Результат:</strong> Поймёте смысл синастрии, эволюционную задачу отношений и научитесь смотреть на пару глубже, без фатальных выводов.</div></div>
-  </details>
-  <details class="lecture">
-    <summary><span class="num">2</span><span class="lecture-title">Натальная карта как основа синастрии</span><span class="plus">+</span></summary>
-    <div class="lecture-body"><h4>В программе</h4><ul><li>Потенциал отношений в индивидуальном гороскопе</li><li>5, 7 и 8 дома, их управители и потребность в партнёрстве</li><li>Стабильность, внутренние противоречия, дефицит стихий и принцип подтверждения</li></ul><div class="outcome"><strong>Результат:</strong> Сможете видеть, что человек несёт в отношения, где его сильные стороны, дефициты и внутренние противоречия.</div></div>
-  </details>
-  <details class="lecture">
-    <summary><span class="num">3</span><span class="lecture-title">Наложение планет партнёров на дома</span><span class="plus">+</span></summary>
-    <div class="lecture-body"><h4>В программе</h4><ul><li>Планета как сила, дом как обстоятельства</li><li>Как планеты партнёра активизируют дома и куспиды</li><li>Почему карты необходимо накладывать в обоих направлениях</li></ul><div class="outcome"><strong>Результат:</strong> Научитесь видеть, какие сферы жизни партнёры включают друг в друге и почему отношения воспринимаются несимметрично.</div></div>
-  </details>
-  <details class="lecture">
-    <summary><span class="num">4</span><span class="lecture-title">Сравнение одноимённых планет</span><span class="plus">+</span></summary>
-    <div class="lecture-body"><h4>В программе</h4><ul><li>Солнце, Луна, Меркурий, Венера, Марс, Юпитер и Сатурн</li><li>Связи через знаки, стихии, управителей и диспозиторов</li><li>Почему отсутствие аспекта не означает отсутствие взаимодействия</li></ul><div class="outcome"><strong>Результат:</strong> Сможете сравнивать личность, эмоции, общение, ценности, действия, убеждения и границы партнёров.</div></div>
-  </details>
-  <details class="lecture">
-    <summary><span class="num">5</span><span class="lecture-title">Светила и гендерные планеты</span><span class="plus">+</span></summary>
-    <div class="lecture-body"><h4>В программе</h4><ul><li>Солнце, Луна, Венера и Марс в отношениях</li><li>Любовный, семейный и родительский образ мужчины и женщины</li><li>Связи Солнца и Луны, Венеры и Марса</li></ul><div class="outcome"><strong>Результат:</strong> Поймёте природу романтического и сексуального притяжения и противоречия между любовью, браком и семейной ролью.</div></div>
-  </details>
-  <details class="lecture">
-    <summary><span class="num">6</span><span class="lecture-title">Эмоциональная и бытовая совместимость</span><span class="plus">+</span></summary>
-    <div class="lecture-body"><h4>В программе</h4><ul><li>Луна как основа совместной жизни</li><li>Эмоциональные потребности, забота, привычки, ритм жизни и быт</li><li>Различия, которые можно согласовать, и те, что тяжело выдерживать годами</li></ul><div class="outcome"><strong>Результат:</strong> Научитесь отличать романтическую совместимость от бытовой и видеть, насколько людям реально комфортно жить рядом.</div></div>
-  </details>
-  <details class="lecture">
-    <summary><span class="num">7</span><span class="lecture-title">Аспекты в синастрии</span><span class="plus">+</span></summary>
-    <div class="lecture-body"><h4>В программе</h4><ul><li>Соединение, оппозиция, квадратура, тригон, секстиль</li><li>Роль орбиса, творческие и кармические аспекты</li><li>Почему гармоничные аспекты не всегда благо, а напряжённые — не всегда проблема</li></ul><div class="outcome"><strong>Результат:</strong> Сможете глубоко читать аспекты и понимать, какое новое качество рождается из взаимодействия двух планет.</div></div>
-  </details>
-  <details class="lecture">
-    <summary><span class="num">8</span><span class="lecture-title">Кармические узлы и эволюционная задача пары</span><span class="plus">+</span></summary>
-    <div class="lecture-body"><h4>В программе</h4><ul><li>Резонанс узлов партнёров</li><li>Планеты партнёра на узлах и в квадрате к ним</li><li>Повторяющиеся сценарии, предопределённость и свобода воли</li></ul><div class="outcome"><strong>Результат:</strong> Поймёте, чему партнёры учат друг друга, какие задачи проживают вместе и почему некоторые отношения завершаются после выполнения своей роли.</div></div>
-  </details>
-  <details class="lecture">
-    <summary><span class="num">9</span><span class="lecture-title">Чёрная Луна и включённые знаки</span><span class="plus">+</span></summary>
-    <div class="lecture-body"><h4>В программе</h4><ul><li>Чёрная Луна как кривое зеркало и зона сильной вовлечённости</li><li>Зависимость, искажение, зацикленность и постфактум-осознание</li><li>Включённые знаки и неосознанные качества, которые вскрывает партнёр</li></ul><div class="outcome"><strong>Результат:</strong> Научитесь видеть болезненные, притягательные и неосознанные сценарии, через которые отношения меняют человека.</div></div>
-  </details>
-  <details class="lecture">
-    <summary><span class="num">10</span><span class="lecture-title">Высшие планеты и трансформация</span><span class="plus">+</span></summary>
-    <div class="lecture-body"><h4>В программе</h4><ul><li>Уран, Нептун и Плутон в синастрии</li><li>Их связи с личными планетами, Узлами и Чёрной Луной</li><li>Повторение родительских и семейных моделей</li></ul><div class="outcome"><strong>Результат:</strong> Сможете распознавать отношения, которые приносят кризис, освобождение, идеализацию или глубокую трансформацию.</div></div>
-  </details>
-  <details class="lecture">
-    <summary><span class="num">11</span><span class="lecture-title">Разные виды синастрических отношений</span><span class="plus">+</span></summary>
-    <div class="lecture-body"><h4>В программе</h4><ul><li>Любовные, супружеские и неофициальные отношения</li><li>Родители и дети, родственники, друзья, деловые связи</li><li>Учитель, руководитель и другие значимые люди</li></ul><div class="outcome"><strong>Результат:</strong> Научитесь анализировать синастрию не только для пары, но и для семьи, дружбы, работы и других важных связей.</div></div>
-  </details>
-  <details class="lecture">
-    <summary><span class="num">12</span><span class="lecture-title">Развитие отношений и итоговый алгоритм</span><span class="plus">+</span></summary>
-    <div class="lecture-body"><h4>В программе</h4><ul><li>Потенциал продолжительности отношений</li><li>Карта первой встречи, знакомства, брака и рождения ребёнка</li><li>Прогрессии, транзиты, дирекции и пошаговый алгоритм полного анализа</li></ul><div class="outcome"><strong>Результат:</strong> Соберёте целостный алгоритм анализа и сможете делать взвешенные выводы: зачем этот человек появился в жизни.</div></div>
-  </details>
-</div>
-<div class="mid-cta"><h3>Можно сначала спокойно посмотреть программу целиком</h3><p>Если останутся вопросы по формату, участию или уровню подготовки — напишите в Отдел заботы в ТГ @astrozabota. Поможем спокойно сориентироваться.</p><a class="btn secondary tg-link" href="#">Отдел заботы в ТГ @astrozabota</a></div></div></section>
-
-<section id="offer"><div class="wrap"><div class="offer-box"><div class="eyebrow">Условия участия</div><h2 class="section-title">Если хотите учиться вместе с текущей группой</h2><p>Чтобы присутствовать на <strong>живых онлайн-уроках</strong>, задавать вопросы Татьяне во время занятий и проходить модуль вместе с группой, важно войти в текущий поток <strong>до 10 октября 2026 года</strong>.</p><p>Так у вас останется время спокойно посмотреть первые 2 лекции в записи, изучить методички и дальше продолжить обучение уже вместе со всеми в живом формате.</p><div class="price">44 000 ₽</div><div class="deadline">Войти в текущий поток можно до 10 октября 2026 года</div><p>Если до оплаты остались вопросы, можно сначала написать в Отдел заботы в ТГ @astrozabota — подскажем по формату, доступу и участию.</p><div class="cta-row"><a class="btn primary payment-action" href="#">Присоединиться к модулю</a><a class="btn secondary tg-link" href="#">Отдел заботы в ТГ @astrozabota</a></div><div class="telegram">@astrozabota · Нажмите — откроется чат отдела заботы</div></div></div></section>
+<div class="divider"><span>☉ ✦ ☾</span></div>
+<section id="program"><div class="wrap"><div class="program-head"><div><div class="eyebrow">Программа модуля</div><h2 class="section-title">12 живых онлайн-лекций</h2></div><p>Раскройте лекцию, чтобы посмотреть, что именно будем разбирать и с каким пониманием вы выйдете после урока.</p></div>
+<div class="lectures">
+<details open><summary><span class="num">1</span><span class="lecture-title">Философия синастрии и смысл встречи</span><span class="plus">+</span></summary><div class="lecture-body"><h4>В программе</h4><ul><li>Что изучает синастрия и почему встречи не случайны</li><li>Отношения как выражение натальной карты</li><li>Сходство, противоположность и взаимное дополнение</li></ul><div class="outcome"><b>Результат:</b> поймёте смысл синастрии и эволюционную задачу отношений без фатальных выводов.</div></div></details>
+<details><summary><span class="num">2</span><span class="lecture-title">Натальная карта как основа синастрии</span><span class="plus">+</span></summary><div class="lecture-body"><h4>В программе</h4><ul><li>Потенциал отношений в обеих натальных картах</li><li>5, 7 и 8 дома и их управители</li><li>Потребности в браке, близости, свободе и стабильности</li></ul><div class="outcome"><b>Результат:</b> увидите, что каждый человек уже несёт с собой в отношения.</div></div></details>
+<details><summary><span class="num">3</span><span class="lecture-title">Планеты партнёра в домах</span><span class="plus">+</span></summary><div class="lecture-body"><h4>В программе</h4><ul><li>Планета как сила, дом как обстоятельства</li><li>Активация домов и куспидов партнёром</li><li>Почему важно смотреть наложение в обе стороны</li></ul><div class="outcome"><b>Результат:</b> поймёте, какие сферы жизни партнёры активируют друг в друге.</div></div></details>
+<details><summary><span class="num">4</span><span class="lecture-title">Сравнение одноимённых планет</span><span class="plus">+</span></summary><div class="lecture-body"><h4>В программе</h4><ul><li>Солнце, Луна, Меркурий, Венера, Марс, Юпитер и Сатурн</li><li>Знаки, стихии, управители и диспозиторы</li><li>Взаимодействие даже без точного аспекта</li></ul><div class="outcome"><b>Результат:</b> сможете сравнивать эмоции, ценности, общение, действия и границы партнёров.</div></div></details>
+<details><summary><span class="num">5</span><span class="lecture-title">Светила и гендерные планеты</span><span class="plus">+</span></summary><div class="lecture-body"><h4>В программе</h4><ul><li>Солнце, Луна, Венера и Марс</li><li>Любовный и семейный образ партнёра</li><li>Солнце–Луна и Венера–Марс</li></ul><div class="outcome"><b>Результат:</b> поймёте природу романтического и сексуального притяжения.</div></div></details>
+<details><summary><span class="num">6</span><span class="lecture-title">Эмоциональная и бытовая совместимость</span><span class="plus">+</span></summary><div class="lecture-body"><h4>В программе</h4><ul><li>Луна и эмоциональные потребности</li><li>Забота, ритмы, привычки, отдых и личное пространство</li><li>Романтическая совместимость ≠ бытовая</li></ul><div class="outcome"><b>Результат:</b> увидите, насколько людям действительно комфортно жить рядом.</div></div></details>
+<details><summary><span class="num">7</span><span class="lecture-title">Аспекты в синастрии</span><span class="plus">+</span></summary><div class="lecture-body"><h4>В программе</h4><ul><li>Соединение, оппозиция, квадратура, тригон и секстиль</li><li>Орбис, творческие и кармические аспекты</li><li>Почему напряжение может развивать, а гармония — удерживать проблему</li></ul><div class="outcome"><b>Результат:</b> научитесь читать аспекты глубже, чем «хорошо/плохо».</div></div></details>
+<details><summary><span class="num">8</span><span class="lecture-title">Узлы и эволюционная задача пары</span><span class="plus">+</span></summary><div class="lecture-body"><h4>В программе</h4><ul><li>Северный и Южный узлы</li><li>Планеты партнёра на узлах и квадраты к ним</li><li>Повторяющиеся сценарии и незавершённые задачи</li></ul><div class="outcome"><b>Результат:</b> поймёте, чему партнёры учат друг друга и какую задачу проживают вместе.</div></div></details>
+<details><summary><span class="num">9</span><span class="lecture-title">Чёрная Луна и включённые знаки</span><span class="plus">+</span></summary><div class="lecture-body"><h4>В программе</h4><ul><li>Вовлечённость, искажение, зависимость и фиксация</li><li>Чёрная Луна в домах, знаках и аспектах</li><li>Включённые знаки и вытесненные качества</li></ul><div class="outcome"><b>Результат:</b> научитесь видеть болезненные и неосознанные сценарии отношений.</div></div></details>
+<details><summary><span class="num">10</span><span class="lecture-title">Высшие планеты и трансформация</span><span class="plus">+</span></summary><div class="lecture-body"><h4>В программе</h4><ul><li>Уран, Нептун и Плутон</li><li>Связи с личными планетами, Узлами и Чёрной Луной</li><li>Семейные модели и отношения, меняющие жизнь</li></ul><div class="outcome"><b>Результат:</b> распознаете свободу, идеализацию, кризис, власть и глубокую трансформацию.</div></div></details>
+<details><summary><span class="num">11</span><span class="lecture-title">Разные виды отношений</span><span class="plus">+</span></summary><div class="lecture-body"><h4>В программе</h4><ul><li>Любовь, брак и неофициальные отношения</li><li>Родители и дети, родственники, друзья</li><li>Бизнес, учитель, руководитель и другие значимые люди</li></ul><div class="outcome"><b>Результат:</b> сможете применять синастрию далеко за пределами романтической пары.</div></div></details>
+<details><summary><span class="num">12</span><span class="lecture-title">Развитие отношений и итоговый алгоритм</span><span class="plus">+</span></summary><div class="lecture-body"><h4>В программе</h4><ul><li>Потенциал продолжительности отношений</li><li>Карта первой встречи, брака и значимых событий</li><li>Прогрессии, транзиты, дирекции и полный алгоритм анализа</li></ul><div class="outcome"><b>Результат:</b> соберёте целостный алгоритм и сможете делать взвешенные выводы о смысле конкретной связи.</div></div></details>
+</div></div></section>
+<div class="divider"><span>☾ ✦ ♡ ✦ ☾</span></div>
+<section><div class="wrap"><div class="panel format"><div class="format-copy"><div class="eyebrow">Как проходит обучение</div><h2 class="section-title">Живые занятия, а не просто набор записей</h2><p class="lead">Вы учитесь вместе с Татьяной в реальном времени. Можно задать вопрос прямо во время лекции. Если не получается быть онлайн — занятие остаётся в личном кабинете.</p></div><div class="format-copy"><div class="format-list">
+<div class="format-item"><b>Онлайн</b><span>живые лекции с Татьяной</span></div><div class="format-item"><b>1–1,5 часа</b><span>каждое занятие</span></div><div class="format-item"><b>Записи</b><span>доступны в личном кабинете</span></div><div class="format-item"><b>Методички</b><span>к каждому уроку</span></div><div class="format-item"><b>Вопросы</b><span>можно задавать в прямом эфире</span></div><div class="format-item"><b>Практика</b><span>на реальных картах учеников</span></div>
+</div></div></div></div></section>
+<section id="offer"><div class="wrap"><div class="panel offer"><div class="eyebrow">Условия участия</div><h2 class="section-title">Войти в текущий поток</h2><p>Чтобы присутствовать на живых онлайн-уроках и идти вместе с группой, важно присоединиться <b>до 10 октября 2026 года</b>. Так останется время посмотреть первые 2 лекции в записи и дальше продолжить обучение вместе со всеми.</p><div class="price">44 000 ₽</div><div class="deadline">Войти в поток можно до 10 октября 2026</div><p>Доступна внутренняя рассрочка на 3 месяца: 2–3 платежа, первый платёж — не менее 30% до начала обучения.</p><div class="actions"><a class="btn primary payment-action" href="#">Присоединиться к модулю</a><a class="btn secondary tg-link" href="#">Отдел заботы в ТГ @astrozabota</a></div></div></div></section>
 </main>
-
-<footer class="footer"><div class="wrap">Школа Татьяны Лукашевич · Модуль 4 «Синастрия»</div></footer>
+<footer class="footer">Школа Татьяны Лукашевич · Модуль 4 «Синастрия»</footer>
 <a class="sticky payment-action" href="#">Присоединиться к модулю</a>
-
 <script>
 const TELEGRAM_TEXT='Здравствуйте! Посмотрела программу модуля 4 «Синастрия» и хочу присоединиться к обучению. Подскажите, пожалуйста, как оформить участие?';
 const TELEGRAM_URL='https://t.me/astrozabota?text='+encodeURIComponent(TELEGRAM_TEXT);
 const PAYMENT_URL='';
 document.querySelectorAll('.tg-link').forEach(a=>{a.href=TELEGRAM_URL;a.target='_blank';a.rel='noopener'});
 document.querySelectorAll('.payment-action').forEach(a=>{a.href=PAYMENT_URL||TELEGRAM_URL;a.target='_blank';a.rel='noopener'});
-</script>
-</body>
-</html>
+</script></body></html>
